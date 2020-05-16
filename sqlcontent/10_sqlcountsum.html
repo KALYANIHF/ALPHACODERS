@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+       img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SQL COUNT( ), AVG( ) and SUM( ) Functions</h1>
+    <p>
+      The COUNT( ) function returns the number of rows that matches a specified
+      criteria. The AVG( ) function returns the average value of a numeric
+      column. The SUM( ) function returns the total sum of a numeric column.
+    </p>
+    <h3>COUNT( ) Syntax</h3>
+    <div>
+      <p>SELECT COUNT(column_name) FROM table_name WHERE condition;</p>
+    </div>
+    <h3>AVG( ) Syntax</h3>
+    <div>
+      <p>SELECT AVG(column_name) FROM table_name WHERE condition;</p>
+    </div>
+    <h3>SUM( ) Syntax</h3>
+    <div>
+      <p>SELECT SUM(column_name) FROM table_name WHERE condition;</p>
+    </div>
+    <h2>Demo Database</h2>
+    <p>
+      Below is a selection from the "Products" table in the Northwind sample
+      database:
+    </p>
+    <img src="../img/newdb.png" alt="" />
+    <h2>COUNT( ) Example</h2>
+    <p>The following SQL statement finds the number of products:</p>
+    <div>
+      <p>SELECT COUNT(ProductID) FROM Products;</p>
+    </div>
+    <h3>AVG( ) Example</h3>
+    <p>The following SQL statement finds the average price of all products:</p>
+    <div>
+      <p>SELECT AVG(Price) FROM Products;</p>
+    </div>
+    <p><b>Note:</b> NULL values are ignored.</p>
+    <h2>SUM( ) Example</h2>
+    <p>
+      The following SQL statement finds the sum of the "Quantity" fields in the
+      "OrderDetails" table:
+    </p>
+    <div>
+      <p>SELECT SUM(Quantity) FROM OrderDetails;</p>
+    </div>
+    <p><b>Note:</b> NULL values are ignored.</p>
+    <a href="9_sqlnull.html"><button type="button" id="left">PREV</button></a>
+    <a href="11_sqlwildcare.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

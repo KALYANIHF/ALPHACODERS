@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+      img {
+        display: block;
+        margin-left: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>The Graphics Canvas element</h1>
+    <p>
+      Use the HTML &lt;canvas> element with either the canvas scripting API or
+      the WebGL API to draw graphics and animations.
+    </p>
+    <h2>Attributes</h2>
+    <p>This element's attributes include the global attributes.</p>
+    <dl><b>width</b></dl>
+    <dt>The height of the coordinate space in CSS pixels. Defaults to 150.</dt>
+    <dl><b>height</b></dl>
+    <dt>The width of the coordinate space in CSS pixels. Defaults to 300.</dt>
+    <h2>Usage notes</h2>
+    <h3><dl>Usage notes</dl></h3>
+    <dt>
+      You may (and should) provide alternate content inside the &lt;canvas>
+      block. That content will be rendered both on older browsers that don't
+      support canvas and in browsers with JavaScript disabled.
+    </dt>
+    <h3>
+      <dl>Required &lt;/canvas> tag</dl>
+    </h3>
+    <dt>
+      Unlike the &lt;img> element, the &lt;canvas> element requires the closing
+      tag (&lt;/canvas>).
+    </dt>
+    <h3>
+      <dl>Sizing the canvas using CSS versus HTML</dl>
+    </h3>
+    <dt>
+      The displayed size of the canvas can be changed using CSS, but if you do
+      this the image is scaled during rendering to fit the styled size, which
+      can make the final graphics rendering end up being distorted. It is better
+      to specify your canvas dimensions by setting the width and height
+      attributes directly on the &lt;canvas> elements, either directly in the
+      HTML or by using JavaScript.
+    </dt>
+    <h3>Maximum canvas size</h3>
+    <p>
+      The maximum size of a &lt;canvas> element is very large, but the exact
+      size depends on the browser. The following is some data we've collected
+      from various tests and other sources
+    </p>
+    <h4>Example:</h4>
+    <div>
+      <pre>
+        &lt;canvas id="canvas" width="300" height="300">
+          An alternative text describing what your canvas displays.
+        &lt;canvas>
+    </pre
+      >
+    </div>
+    <div>
+      <pre>
+        &lt;script>
+          var canvas = document.getElementById('canvas');
+          var ctx = canvas.getContext('2d');
+          ctx.fillStyle = 'green';
+          ctx.fillRect(10, 10, 100, 100);
+        &lt;/script>
+      </pre>
+    </div>
+    <h3>Opaque canvas</h3>
+    <p>
+      If your canvas does not use transparency, you can tell the browser that
+      your canvas is opaque, this will be used internally to optimize rendering.
+      To do this, set alpha to false when getting the drawing context:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <pre>
+        &lt;script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d', { alpha: false });
+        &lt;/script>
+      </pre>
+    </div>
+    <h2>Accessibility concerns</h2>
+    <p>
+      The &lt;canvas> element on its own is just a bitmap and does not provide
+      information about any drawn objects. Canvas content is not exposed to
+      accessibility tools as semantic HTML is. In general, you should avoid
+      using canvas in an accessible website or app. The following guides can
+      help to make it more accessible.
+    </p>
+    <a href="13_pixelsmanupulate.html"
+      ><button type="button" id="left">PREV</button></a
+    >
+    <a href="15_svgelement.html"
+      ><button type="button" id="right">NEXT</button></a
+    >
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

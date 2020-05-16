@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      p {
+        margin-left: 1em;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PHP String</h1>
+    <p>
+      PHP string is a sequence of characters i.e., used to store and manipulate
+      text. PHP supports only 256-character set and so that it does not offer
+      native Unicode support. There are 4 ways to specify a string literal in
+      PHP.
+    </p>
+    <ol>
+      <li>single quoted</li>
+      <li>double quoted</li>
+      <li>heredoc syntax</li>
+      <li>newdoc syntax (since PHP 5.3)</li>
+    </ol>
+    <h1>Single Quoted</h1>
+    <p>
+      We can create a string in PHP by enclosing the text in a single-quote. It
+      is the easiest way to specify string in PHP.
+    </p>
+    <p>
+      For specifying a literal single quote, escape it with a backslash (\) and
+      to specify a literal backslash (\) use double backslash (\\). All the
+      other instances with backslash such as \r or \n, will be output same as
+      they specified instead of having any special meaning.
+    </p>
+    <p><b>For Example</b></p>
+    <p>
+      Following some examples are given to understand the single quoted PHP
+      String in a better way:
+    </p>
+    <p><b>Example 1</b></p>
+    <img src="./images/strn.PNG" alt="string" />
+    <p><b>Output:</b></p>
+    <img src="./images/strn1.PNG" alt="string" />
+    <p>
+      We can store multiple line text, special characters, and escape sequences
+      in a single-quoted PHP string.
+    </p>
+    <p><b>Example 2</b></p>
+    <img src="./images/strn2.PNG" alt="string" />
+    <p><b>Output:</b></p>
+    <img src="./images/strn3.PNG" alt="string" />
+    <p><b>Example 3</b></p>
+    <img src="./images/strn4.PNG" alt="string" />
+    <p><b>Output:</b></p>
+    <img src="./images/strn5.PNG" alt="string" />
+    <h1>Double Quoted</h1>
+    <p>
+      In PHP, we can specify string through enclosing text within double quote
+      also. But escape sequences and variables will be interpreted using double
+      quote PHP strings.
+    </p>
+    <p><b>Example 1</b></p>
+    <img src="./images/strn6.PNG" alt="string" />
+    <p><b>Output:</b></p>
+    <img src="./images/strn7.PNG" alt="string" />
+    <p>
+      Now, you <b>can't use double quote directly</b> inside double quoted
+      string.
+    </p>
+    <p><b>Example 2</b></p>
+    <img src="./images/strn8.PNG" alt="string" />
+    <p><b>Output :</b></p>
+    <img src="./images/strn9.PNG" alt="string" />
+    <p>
+      We
+      <b
+        >can store multiple line text, special characters and escape
+        sequences</b
+      >
+      in a double quoted PHP string.
+    </p>
+    <p><b>Example 3</b></p>
+    <img src="./images/strn10.PNG" alt="string" />
+    <p><b>Output:</b></p>
+    <img src="./images/strn11.PNG" alt="string" />
+    <p>In double quoted strings, <b>variable will be interpreted</b>.</p>
+    <p><b>Example 4</b></p>
+    <img src="./images/strn12.PNG" alt="string" />
+    <p><b>Output:</b></p>
+    <img src="./images/strn13.PNG" alt="string" />
+    <h1>Heredoc</h1>
+    <p>
+      Heredoc syntax (&lt;&lt;&lt;) is the third way to delimit strings. In
+      Heredoc syntax, an identifier is provided after this heredoc
+      (&lt;&lt;&lt;) operator, and immediately a new line is started to write
+      any text. To close the quotation, the string follows itself and then again
+      that same identifier is provided. That closing identifier must begin from
+      the new line without any whitespace or tab.
+    </p>
+    <h2>Naming Rules</h2>
+    <p>
+      The identifier should follow the naming rule that it must contain only
+      alphanumeric characters and underscores, and must start with an underscore
+      or a non-digit character.
+    </p>
+    <p><b>Example</b></p>
+    <p><b>Valid Example</b></p>
+    <img src="./images/strn14.PNG" alt="string" />
+    <p><b>Output</b></p>
+    <img src="./images/strn15.PNG" alt="string" />
+    <p><b>Invalid Example</b></p>
+    <p>
+      We cannot use any whitespace or tab before and after the identifier and
+      semicolon, which means identifier must not be indented. The identifier
+      must begin from the new line.
+    </p>
+    <img src="./images/strn16.PNG" alt="string" />
+    <p>This code will generate an error.</p>
+    <p><b>Output:</b></p>
+    <img src="./images/strn17.PNG" alt="string" />
+    <p>
+      Heredoc is similar to the double-quoted string, without the double quote,
+      means that quote in a heredoc are not required. It can also print the
+      variable's value.
+    </p>
+    <p><b>Example</b></p>
+    <img src="./images/strn18.JPG" alt="string" />
+    <p><b>Output</b></p>
+    <img src="./images/strn19.PNG" alt="string" />
+    <p><b>Example</b></p>
+    <p>We can add multiple lines of text here between heredoc syntax.</p>
+    <img src="./images/strn20.PNG" alt="string" />
+    <p><b>Output</b></p>
+    <img src="./images/strn21.PNG" alt="string" />
+    <p>Below are the example with class and their variable</p>
+    <p><b>Example</b></p>
+    <img src="./images/strn22.PNG" alt="string" />
+    <p><b>Output</b></p>
+    <img src="./images/strn23.PNG" alt="string" />
+    <h1>Newdoc</h1>
+    <p>
+      Newdoc is similar to the heredoc, but in newdoc parsing is not done. It is
+      also identified with three less than symbols &lt;&lt;&lt; followed by an
+      identifier. But here identifier is enclosed in single-quote, e.g.
+      &lt;&lt;&lt;'EXP'. Newdoc follows the same rule as heredocs.
+    </p>
+    <p>
+      The difference between newdoc and heredoc is that - Newdoc is a
+      single-quoted string whereas heredoc is a double-quoted string.
+    </p>
+    <p><b>Example-1:</b></p>
+    <img src="./images/strn24.PNG" alt="string" />
+    <p><b>Output:</b></p>
+    <img src="./images/strn25.PNG" alt="string" />
+    <p>Go to view page source and see the source of the program.</p>
+    <img src="./images/strn26.PNG" alt="string" />
+    <p><b>Invalid Example</b></p>
+    <p>
+      We cannot use any whitespace or tab before and after the identifier and
+      semicolon, means identifier must not be indented. The identifier must
+      begin from the new line. It is also invalid in newdoc same as heredoc.
+    </p>
+    <img src="./images/strn27.PNG" alt="string" />
+    <p>This code will generate an error.</p>
+    <p><b>Output:</b></p>
+    <img src="./images/strn28.PNG" alt="string" />
+    <div>
+      <a href="phparay.html"><button type="button" id="left">PREV</button></a>
+      <a href="phpfhand.html"><button type="button" id="right">NEXT</button></a>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

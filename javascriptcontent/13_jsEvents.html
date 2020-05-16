@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+
+      img {
+        margin-left: 2em;
+        display: block;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      JavaScript Events
+    </h1>
+    <br />
+    <p>
+      HTML events are "things" that happen to HTML elements. When JavaScript is
+      used in HTML pages, JavaScript can "react" on these events.
+    </p>
+    <br />
+    <h2>
+      HTML Events
+    </h2>
+    <br />
+    <p>
+      An HTML event can be something the browser does, or something a user does.
+      Here are some examples of HTML events: An HTML web page has finished
+      loading An HTML input field was changed An HTML button was clicked Often,
+      when events happen, you may want to do something. JavaScript lets you
+      execute code when events are detected. HTML allows event handler
+      attributes, with JavaScript code, to be added to HTML elements. With
+      single quotes:
+    </p>
+    <br />
+    <div>
+      <pre>
+            &lt;element event='some JavaScript'>
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      with double quotes:
+    </p>
+    <br />
+    <div>
+      <pre>
+            &lt;element event="some JavaScript">
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      In the following example, an onclick attribute (with code), is added to a
+      button element:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+        </pre>
+    </div>
+    <br />
+    <p>
+      In the example above, the JavaScript code changes the content of the
+      element with id="demo". In the next example, the code changes the content
+      of its own element (using this.innerHTML):
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            <button onclick="this.innerHTML = Date()">The time is?</button>
+        </pre>
+    </div>
+    <br />
+    <p>
+      JavaScript code is often several lines long. It is more common to see
+      event attributes calling functions:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            <button onclick="displayDate()">The time is?</button>
+        </pre>
+    </div>
+    <br />
+    <h2>
+      Common HTML Events
+    </h2>
+    <br />
+    <p>
+      Here is a list of some common HTML events:
+    </p>
+    <br />
+    <img src="../img/eventsjs1.PNG" alt="" />
+    <br />
+    <h2>
+      What can JavaScript Do?
+    </h2>
+    <br />
+    <p>
+      Event handlers can be used to handle, and verify, user input, user
+      actions, and browser actions: Things that should be done every time a page
+      loads Things that should be done when the page is closed Action that
+      should be performed when a user clicks a button Content that should be
+      verified when a user inputs data And more ... Many different methods can
+      be used to let JavaScript work with events: HTML event attributes can
+      execute JavaScript code directly HTML event attributes can call JavaScript
+      functions You can assign your own event handler functions to HTML elements
+      You can prevent events from being sent or being handled And more ...
+    </p>
+    <br />
+    <a href="12_jsObjects.html"><button type="button" id="left">PREV</button></a>
+    <a href="14_jsNumbermethod.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

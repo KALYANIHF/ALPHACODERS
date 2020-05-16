@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+      img {
+        margin-left: 2em;
+        display: block;
+      }
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SQL WHERE Clause</h1>
+    <p>
+      The WHERE clause is used to filter records. The WHERE clause is used to
+      extract only those records that fulfill a specified condition.
+    </p>
+    <h3>WHERE Syntax</h3>
+    <div>
+      <p>SELECT column1, column2, ... FROM table_name WHERE condition;</p>
+    </div>
+    <h3>Demo database</h3>
+    <img src="../img/tablesql.png" alt="" />
+    <h2>WHERE Clause Example</h2>
+    <p>
+      The following SQL statement selects all the customers from the country
+      "Mexico", in the "Customers" table:
+    </p>
+    <div>
+      <p>SELECT * FROM Customers WHERE Country='Mexico';</p>
+    </div>
+    <h2>Text Fields vs. Numeric Fields</h2>
+    <p>
+      SQL requires single quotes around text values (most database systems will
+      also allow double quotes). However, numeric fields should not be enclosed
+      in quotes:
+    </p>
+    <div><p>SELECT * FROM Customers WHERE CustomerID=1;</p></div>
+    <h3>Operators in The WHERE Clause</h3>
+    <img src="../img/list.png" alt="" />
+
+    <a href="4_sqlselectdis.html"><button type="button" id="left">PREV</button></a>
+    <a href="6_sqlandn.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

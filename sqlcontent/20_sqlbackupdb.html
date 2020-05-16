@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+      img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SQL BACKUP DATABASE for SQL Server</h1>
+    <p>
+      The BACKUP DATABASE statement is used in SQL Server to create a full back
+      up of an existing SQL database.
+    </p>
+    <h4>Syntax</h4>
+    <div>
+      <p>BACKUP DATABASE databasename TO DISK = 'filepath';</p>
+    </div>
+    <h2>The SQL BACKUP WITH DIFFERENTIAL Statement</h2>
+    <p>
+      A differential back up only backs up the parts of the database that have
+      changed since the last full database backup.
+    </p>
+    <h4>Syntax</h4>
+    <div>
+      <p>
+        BACKUP DATABASE databasename TO DISK = 'filepath' WITH DIFFERENTIAL;
+      </p>
+    </div>
+    <h3>BACKUP DATABASE Example</h3>
+    <p>
+      The following SQL statement creates a full back up of the existing
+      database "testDB" to the D disk:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>BACKUP DATABASE testDB TO DISK = 'D:\backups\testDB.bak';</p>
+    </div>
+    <h2>BACKUP WITH DIFFERENTIAL Example</h2>
+    <p>
+      The following SQL statement creates a differential back up of the database
+      "testDB":
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>
+        BACKUP DATABASE testDB TO DISK = 'D:\backups\testDB.bak' WITH
+        DIFFERENTIAL;
+      </p>
+    </div>
+    <a href="19_sqldropdatabase.html"><button type="button" id="left">PREV</button></a>
+    <a href="21_sqlcreatetable.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      p {
+        margin-left: 1em;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>PHP Download File</h1>
+    <p>
+      PHP enables you to download file easily using built-in readfile()
+      function. The readfile() function reads a file and writes it to the output
+      buffer.
+    </p>
+    <h1>PHP readfile() function</h1>
+    <p><b>Syntax</b></p>
+    <img src="./images/down.PNG" alt="download" />
+    <p><b>$filename:</b> represents the file name</p>
+    <p>
+      <b>$use_include_path:</b> it is the optional parameter. It is by default
+      false. You can set it to true to the search the file in the included_path.
+    </p>
+    <p><b>$context:</b> represents the context stream resource.</p>
+    <p><b>int:</b> it returns the number of bytes read from the file.</p>
+    <h1>PHP Download File Example: Text File</h1>
+    <p>File: download1.php</p>
+    <img src="./images/down1.PNG" alt="download" />
+    <h1>PHP Download File Example: Binary File</h1>
+    <p>File: download2.php</p>
+    <img src="./images/down2.PNG" alt="download" />
+    <div>
+      <a href="phpuplod.html"><button type="button" id="left">PREV</button></a>
+      <a href="phpmail.html"><button type="button" id="right">NEXT</button></a>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

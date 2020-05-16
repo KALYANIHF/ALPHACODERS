@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+       img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SQL Comments</h1>
+    <p>
+      Comments are used to explain sections of SQL statements, or to prevent
+      execution of SQL statements.
+    </p>
+    <h2>Single Line Comments</h2>
+    <p>
+      Single line comments start with --. Any text between -- and the end of the
+      line will be ignored (will not be executed). The following example uses a
+      single-line comment as an explanation:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>SELECT * FROM Customers;</p>
+    </div>
+    <p>
+      The following example uses a single-line comment to ignore the end of a
+      line:
+    </p>
+    <div>
+      <p>SELECT * FROM Customers -- WHERE City='Berlin';</p>
+    </div>
+    <h2>Multi-line Comments</h2>
+    <p>
+      Multi-line comments start with /* and end with */. Any text between /* and
+      */ will be ignored. The following example uses a multi-line comment as an
+      explanation:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>
+        /*Select all the columns of all the records in the Customers table:*/
+        SELECT * FROM Customers;
+      </p>
+    </div>
+    <div>
+      <p>
+        /*SELECT * FROM Customers; SELECT * FROM Products; SELECT * FROM Orders;
+        SELECT * FROM Categories;*/ SELECT * FROM Suppliers;
+      </p>
+    </div>
+    <p>
+      To ignore just a part of a statement, also use the /* */ comment. The
+      following example uses a comment to ignore part of a line:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>SELECT CustomerName, /*City,*/ Country FROM Customers;</p>
+    </div>
+    <div>
+      <p>
+        SELECT * FROM Customers WHERE (CustomerName LIKE 'L%' OR CustomerName
+        LIKE 'R%' /*OR CustomerName LIKE 'S%' OR CustomerName LIKE 'T%'*/ OR
+        CustomerName LIKE 'W%') AND Country='USA' ORDER BY CustomerName;
+      </p>
+    </div>
+    <a href="16_selectstant.html"><button type="button" id="left">PREV</button></a>
+    <a href="18_sqlcreatedata.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

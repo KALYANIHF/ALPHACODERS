@@ -1,0 +1,184 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #ff0000 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+header li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 450px;
+  background: url("../img/showcase.jpg") no-repeat 0 -400px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h1 {
+  margin-top: 80px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+.col {
+  color: #ff0000;
+}
+footer {
+  padding: 20px;
+  margin-top: 0px;
+  color: #ffffff;
+  background-color: #ff0000;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #newsletter button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.btn {
+  border: 1px dotted white;
+  padding: 10px 25px;
+  color: white;
+  text-decoration: none;
+  margin-top: 25px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: monospace;
+  background: transparent;
+}
+.btn:hover {
+  background-color: #ff0000;
+  font-weight: bolder;
+  color: black;
+  transition: all 0.3s ease-in;
+}
+#btn1 {
+  padding: 30px 35px;
+  background-color: #000;
+  color: #fff;
+  margin-top: 8px;
+  /* border-radius: 50px; */
+  border: 2px solid #ff0000;
+  font-size: 15px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+#btn1:hover {
+  color: #000;
+  background-color: #fff;
+  padding: 32px 36px;
+  background-color: #ff0000;
+  border: 2px solid #fff;
+}
+.fa-user-circle {
+  font-size: 4.5em;
+  float: right;
+  padding: 2px;
+  margin-top: -4px;
+}

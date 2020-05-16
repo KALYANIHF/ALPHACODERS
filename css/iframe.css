@@ -1,0 +1,27 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 20px;
+}
+.container h1 {
+  background-color: #000;
+  color: #f00;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+}
+.showcase {
+  border-bottom: 1px solid #000;
+}
+.showcase h3 {
+  text-transform: capitalize;
+  color: #fff;
+}
+.showcase h3:hover {
+  color: #f00;
+  font-size: 22px;
+}

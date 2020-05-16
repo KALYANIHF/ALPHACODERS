@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+      img {
+        display: block;
+        margin-left: 7px;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>3D Computer Graphics</h1>
+    <p>
+      In the 2D system, we use only two coordinates X and Y but in 3D, an extra
+      coordinate Z is added. 3D graphics techniques and their application are
+      fundamental to the entertainment, games, and computer-aided design
+      industries. It is a continuing area of research in scientific
+      visualization. Furthermore, 3D graphics components are now a part of
+      almost every personal computer and, although traditionally intended for
+      graphics-intensive software such as games, they are increasingly being
+      used by other applications.
+    </p>
+    <img src="./images_svg/img2.PNG" alt="" />
+    <h2>Parallel Projection</h2>
+    <p>
+      Parallel projection discards z-coordinate and parallel lines from each
+      vertex on the object are extended until they intersect the view plane. In
+      parallel projection, we specify a direction of projection instead of
+      center of projection.
+    </p>
+    <p>
+      In parallel projection, the distance from the center of projection to
+      project plane is infinite. In this type of projection, we connect the
+      projected vertices by line segments which correspond to connections on the
+      original object.
+    </p>
+    <p>
+      Parallel projections are less realistic, but they are good for exact
+      measurements. In this type of projections, parallel lines remain parallel
+      and angles are not preserved. Various types of parallel projections are
+      shown in the following hierarchy.
+    </p>
+    <img src="./images_svg/img3.PNG" alt="" />
+    <h3>Orthographic Projection</h3>
+    <p>
+      In orthographic projection the direction of projection is normal to the
+      projection of the plane. There are three types of orthographic projections
+      −
+    </p>
+    <ul>
+      <li>Front Projection</li>
+      <li>Top Projection</li>
+      <li>Side Projection</li>
+    </ul>
+    <img src="./images_svg/img4.PNG" alt="" />
+    <h2>Oblique Projection</h2>
+    <p>
+      In oblique projection, the direction of projection is not normal to the
+      projection of plane. In oblique projection, we can view the object better
+      than orthographic projection.
+    </p>
+    <p>
+      There are two types of oblique projections − Cavalier and Cabinet. The
+      Cavalier projection makes 45° angle with the projection plane. The
+      projection of a line perpendicular to the view plane has the same length
+      as the line itself in Cavalier projection. In a cavalier projection, the
+      foreshortening factors for all three principal directions are equal.
+    </p>
+    <p>
+      The Cabinet projection makes 63.4° angle with the projection plane. In
+      Cabinet projection, lines perpendicular to the viewing surface are
+      projected at ½ their actual length. Both the projections are shown in the
+      following figure −
+    </p>
+    <img src="./images_svg/img5.PNG" alt="" />
+    <h2>Perspective Projection</h2>
+    <p>
+      In perspective projection, the distance from the center of projection to
+      project plane is finite and the size of the object varies inversely with
+      distance which looks more realistic.
+    </p>
+    <p>
+      The distance and angles are not preserved and parallel lines do not remain
+      parallel. Instead, they all converge at a single point called center of
+      projection or projection reference point. There are 3 types of perspective
+      projections which are shown in the following chart.
+    </p>
+    <ul>
+      <li>One point perspective projection is simple to draw.</li>
+      <li>
+        Two point perspective projection gives better impression of depth.
+      </li>
+      <li>Three point perspective projection is most difficult to draw.</li>
+    </ul>
+    <img src="./images_svg/img6.PNG" alt="" />
+    <h2>Translation</h2>
+    <p>
+      In 3D translation, we transfer the Z coordinate along with the X and Y
+      coordinates. The process for translation in 3D is similar to 2D
+      translation. A translation moves an object into a different position on
+      the screen. The following figure shows the effect of translation −
+    </p>
+    <img src="./images_svg/img7.PNG" alt="" />
+    <a href="3_2dgraphics.html"><button type="button" id="left">PREV</button></a>
+    <a href="5_svg.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+      img {
+        display: block;
+        margin-left: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Create 3D Object</h1>
+    <p>
+      There are two ways to create a 3D object: by extruding or revolving. In
+      addition, you can also rotate a 2D or 3D object in three dimensions. To
+      apply or modify 3D effects for an existing 3D object, select the object
+      and then double-click the effect in the Appearance panel.
+    </p>
+    <h2>Create 3D Objects from 2D Objects</h2>
+    <img src="./images_svg/img21.PNG" alt="" />
+    <h2>Objectives</h2>
+    <ul>
+      <li>Loft 2D objects (profiles) to create 3D objects</li>
+      <li>Sweep 2D objects (profiles) along a path to create 3D objects</li>
+      <li>Revolve 2D objects (profiles) around an axis to create 3D objects</li>
+    </ul>
+    <h2>Required Software</h2>
+    <p>
+      There are many software in the market to make 3D objects you want to build
+    </p>
+    <a href="https://www.autodesk.com/products/autocad/overview"
+      >Our recommanded software is here</a
+    >
+    <br />
+    <h2>Lesson 1: Loft 2D Objects and Shell a 3D Solid</h2>
+    <p>
+      In this lesson, you create 3D objects from 2D objects by lofting. Then you
+      modify and edit the lofted 3D object by shelling. You can create a 3D
+      solid or surface between cross sections (2D profiles) of the object.
+      Lofting creates a solid or surface object that flows through other objects
+      that define its shape. The cross sections that you use when lofting must
+      be open to create a surface or all closed to create a solid. You cannot
+      use a selection set that includes both open and closed objects. To create
+      a surface by lofting a 2D open object (arc)
+    </p>
+    <img src="./images_svg/img22.PNG" alt="" />
+    <ol>
+      <li>Click ➤ Open.</li>
+      <li>
+        In the Select File dialog box, browse to C:\My Documents\Tutorials and
+        select sheet.dwg.
+      </li>
+      <li>Click Open.</li>
+      <li>
+        On the ribbon, click Home tab ➤ Modeling panel ➤ Solid Creation
+        drop-down ➤ Loft.
+      </li>
+    </ol>
+    <img src="./images_svg/img23.PNG" alt="" />
+    <img src="./images_svg/img24.PNG" alt="" />
+    <img src="./images_svg/img25.PNG" alt="" />
+
+    <a href="17_applyingsvg.html"
+      ><button type="button" id="left">PREV</button></a
+    >
+    <a href="20_basicelement.html"
+      ><button type="button" id="right">NEXT</button></a
+    >
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

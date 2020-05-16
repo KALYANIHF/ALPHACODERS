@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="icon" href="./img/alphacoders.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span style="color: rgb(255,0,0);">Alpha</span> Coders</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <form action="loginpage.php" method="POST">
+          <h1>LOG IN</h1>
+          <div>
+            <label id="shink" for="username">username</label>
+            <input type="text" name="username" id="username" required/>
+          </div>
+          <div>
+            <label for="password">password</label>
+            <input type="password" name="pass" id="password" required/>
+          </div>
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+          <br />
+          <a href="signuppage.html"><button type="button">SIGN_UP</button></a>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

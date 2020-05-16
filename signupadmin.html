@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SIGN UP| ADMIN</title>
+    <link rel="stylesheet" href="./css/style10.css" />
+    <link rel="icon" href="./img/alphacoders.png" />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span id="col">Alpha</span> Coders</h1>
+        </div>
+      </div>
+    </header>
+    <section id="showcase">
+      <div class="container">
+        <form action="signupadmin.php" method="post">
+          <h1>ADMIN SIGN UP</h1>
+          <!-- one -->
+          <div>
+            <label id="shink" for="full_name">full name</label>
+            <input type="text" id="full-name" name="full_name" required />
+          </div>
+          <!-- two -->
+          <div>
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <!-- four -->
+          <div>
+            <label for="admin_id">admin_id</label>
+            <input
+              type="text"
+              id="admin_id"
+              placeholder="mustbe-10-char"
+              name="admin_id"
+              required
+            />
+          </div>
+           <div>
+            <label for="password">password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="mustbe-8-char"
+              name="psw"
+              required
+            />
+          </div>
+          <!-- five -->
+          <div>
+            <label for="contact">contact</label>
+            <input type="text" id="contact" name="cont_no" required />
+          </div>
+
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+          <br />
+          <a href="loginadmin.html"><button type="button">LOG_IN</button></a>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

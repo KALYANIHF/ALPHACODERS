@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+    
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+    
+      img {
+        margin-left: 2em;
+        display: block;
+      }
+    
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+    
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    
+      #right {
+        float: right;
+      }
+    
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Output</h1>
+    <br />
+    <h3>JavaScript Display Possibilities</h3>
+    <p>JavaScript can "display" data in different ways:</p>
+    <ul>
+      <li>Writing into an HTML element, using innerHTML.</li>
+      <li>Writing into the HTML output using document.write().</li>
+      <li>Writing into an alert box, using window.alert().</li>
+      <li>Writing into the browser console, using console.log()</li>
+    </ul>
+    <h2>Using innerHTML</h2>
+    <p>
+      To access an HTML element, JavaScript can use the
+      document.getElementById(id) method. The id attribute defines the HTML
+      element. The innerHTML property defines the HTML content:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <pre>
+        &lt;!DOCTYPE html>
+      &lt;html>
+      
+      &lt;body>
+      
+        &lt;h1>My First Web Page</h1>
+        &lt;p>My First Paragraph</p>
+      
+        &lt;p id="demo"></p>
+      
+        &lt;script>
+          document.getElementById("demo").innerHTML = 5 + 6;
+        &lt;/script>
+      
+      &lt;/body>
+      
+      &lt;html>
+    </pre>
+    </div>
+    <h2>Using document.write()</h2>
+    <p>For testing purposes, it is convenient to use document.write():</p>
+    <h4>Example</h4>
+    <div>
+      <pre>
+        &lt;!DOCTYPE html>
+        &lt;html>
+        
+        &lt;body>
+        
+          &lt;h1>My First Web Page</h1>
+          &lt;p>My first paragraph.</p>
+        
+          &lt;script>
+            document.write(5 + 6);
+          &lt;/script>
+        
+        &lt;/body>
+        
+        &lt;/html>
+      </pre>
+    </div>
+    <h2>Using window.alert()</h2>
+    <p>You can use an alert box to display data:</p>
+    <h4>Example</h4>
+    <div>
+      <pre>
+        &lt;!DOCTYPE html>
+        &lt;html>
+        
+        &lt;body>
+        
+          &lt;h1>My First Web Page</h1>
+          &lt;p>My first paragraph.</p>
+        
+          &lt;script>
+            window.alert(5 + 6);
+          &lt;/script>
+        
+        &lt;/body>
+        
+        &lt;/html>
+      </pre>
+    </div>
+    <h2>Using console.log()</h2>
+    <p>For debugging purposes, you can use the console.log() method to display data.</p>
+    <h4>Example</h4>
+    <div>
+      <pre>
+        &lt;!DOCTYPE html>
+        &lt;html>
+        
+        &lt;body>
+        
+          &lt;script>
+            console.log(5 + 6);
+          &lt;/script>
+        
+        &lt;/body>
+        
+        &lt;/html>
+      </pre>
+    </div>
+    <a href="2_jsIntroduction.html"><button type="button" id="left">PREV</button></a>
+    <a href="4_statement.html"><button type="button" id="right">NEXT</button></a>
+    
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

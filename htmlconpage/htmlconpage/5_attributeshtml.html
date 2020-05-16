@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2{
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+      ul li{
+        font-size: 20px;
+      }
+     /* p a{
+        text-decoration-color: blue;
+      }*/
+      b {
+        font-size: 17px;
+      }
+       #left,#right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+    img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    
+      #right {
+        float: right;
+      }
+    
+       footer {
+      padding: 5px;
+      margin-top: 5px;
+      color: #ffffff;
+      background-color: #e8491d;
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+      <h1>HTML Attributes</h1>
+      <ul>
+        <li>HTML attributes are special words which provide additional information about the elements or attributes are the modifier
+        of the HTML element.</li><br>
+        <li>Each element or tag can have attributes, which defines the behaviour of that element.</li><br>
+        <li>Attributes should always be applied with start tag.</li><br>
+        <li>The Attribute should always be applied with its name and value pair.</li><br>
+        <li>The Attributes name and values are case sensitive, and it is recommended by W3C that it should be written in Lowercase
+        only.</li><br>
+        <li>You can add multiple attributes in one HTML element, but need to give space between two attributes.
+</li><br>
+      </ul>
+      <h1>Syntax</h1>
+      <p><img src="./html_attribute/htmlattribute1.png" alt="Syntax"></p>
+      <h1>Example:</h1>
+      <p><img src="./html_attribute/htmlattribute2.png" alt="Example"></p>
+      <h3>Output:</h3>
+      <p><img src="./html_attribute/htmlattribute3.png" alt="Output"></p>
+      <h3>Explanation of above example:</h3>
+      <p><img src="./html_attribute/htmlattribute4.png" alt="Explanation"><br><br> 
+      In the above statement, we have used paragraph tags in which we have applied style attribute. This attribute is used for
+      applying CSS property on any HTML element. It provides height to paragraph element of 50px and turns it colour to blue. <br><br>
+      <img src="./html_attribute/htmlattribute5.png" alt="Explanation"><br><br>
+        In the above statement we have again used style attribute in paragraph tag, which turns its colour red. <br><br>
+        </p>
+        <img src="./html_attribute/htmlattribute18.png" alt="NOTE"><br>
+      <h1>The title attribute in HTML</h1>
+      <p><b>Description:</b> The title attribute is used as text tooltip in most of the browsers. It display its text when
+        user move the
+        cursor over a link or any text. You can use it with any text or link to show the description about that link or text.
+        In
+        our example, we are taking this with paragraph tag and heading tag.</p>
+      <h1>Example:</h1>
+      <p><b>With &lt;h1> tag:</b><br><br><img src="./html_attribute/htmlattribute6.png" alt="Example h1"><br><br><b>With &lt;p> tag:</b><br><br> </p>
+      <img src="./html_attribute/htmlattribute7.png" alt="Example">
+      <h3>Code:</h3>
+      <img src="./html_attribute/htmlattribute8.png" alt="Code">
+      <h3>Output:</h3>
+      <img src="./html_attribute/htmlattribute9.png" alt="Output"><br><br>
+      <h1>The href attribute in HTML</h1>
+      <p><b>Description:</b> The href attribute is the main attribute of &lt;a> anchor tag. This attribute gives the link address which is
+        specified in that link. <b>The href attribute provides the hyperlink, and if it is blank, then it will remain in same
+        page.</b></p>
+        <h1>Example:</h1>
+        <p><b>With link address:</b></p>
+        <img src="./html_attribute/htmlattribute10.png" alt="Example">
+        <p><b>Without link address:</b></p>
+        <img src="./html_attribute/htmlattribute11.png" alt="Example"><br>
+        <img src="./html_attribute/htmlattribute12.png" alt="Output"> <br><br>
+        <h1>The src Attribute</h1>
+        <p>The <b>src</b> attribute is one of the important and required attribute of <b>&lt;img></b> element. It is source for the image which is
+        required to display on browser. This attribute can contain image in same directory or another directory. The image name
+        or source should be correct else browser will not display the image.</p>
+        <h1>Example:</h1><br><br>
+        <img src="./html_attribute/htmlattribute13.png" alt="Example"><br><br>
+        <img src="./html_attribute/htmlattribute14.png" alt="NOTE">
+        <h3>Output:</h3>
+        <img src="./html_attribute/htmlattribute15.png" alt="Output"><br>
+        <h1>Quotes: single quotes or double quotes?</h1>
+        <p>In this chapter you have seen that, we have used attribute with double quotes, but some people might use single quotes
+        in HTML. So use of single quotes with HTML attribute, is also allowed. The following both statements are absolutely
+        fine.</p>
+        <img src="./html_attribute/htmlattribute16.png" alt="example"><br>
+        <h3>Output:</h3>
+        <p><a href="https://www.javatpoint.com">A link to HTML.</a><br>
+        <a href='https://www.javatpoint.com'>A link to HTML.</a>
+</p>
+<p>IN HTML5, you can also omit use of quotes around attribute values.</p>
+<img src="./html_attribute/htmlattribute17.png" alt="example"><br>
+<h3>Output:</h3>
+<p><a href=https://www.javatpoint.com>A link to HTML.</a>
+</p>
+    <a href="4_elementshtml.html"><button type="button" id="left">PREV</button></a>
+    <a href="6_htmlheading.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+        
+      </body>
+      </html>

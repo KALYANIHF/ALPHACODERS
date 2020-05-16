@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Affordable and professional web design" />
+    <meta
+      name="keywords"
+      content="web design, affordable web design, professional web design"
+    />
+    <meta name="author" content="souvik mondal,monodip,bishal,rudra" />
+    <title>Learn Web Deisgn | Welcome</title>
+    <link rel="icon" href="./img/alphacoders.png" />
+    <link rel="stylesheet" href="./css/style1.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span id="col">Alpha</span> Coders</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form action="subscribe.php" method="POST">
+          <input
+            type="text"
+            name="email_id"
+            onfocus="this.value=''"
+            placeholder="Enter Your Email Id..."
+          />
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Services</h1>
+          <ul id="services">
+            <li>
+              <h3>Website Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                mi augue, viverra sit amet ultricies at, vulputate id lorem.
+                Nulla facilisi.
+              </p>
+              <p>Pricing: $1,000 - $3,000</p>
+            </li>
+            <li>
+              <h3>Website Maintenance</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                mi augue, viverra sit amet ultricies at, vulputate id lorem.
+                Nulla facilisi.
+              </p>
+              <p>Pricing: $250 per month</p>
+            </li>
+            <li>
+              <h3>Website Hosting</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                mi augue, viverra sit amet ultricies at, vulputate id lorem.
+                Nulla facilisi.
+              </p>
+              <p>Pricing: $25 per month</p>
+            </li>
+          </ul>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Ask Any Questions</h3>
+            <form class="quote" action="query&qust.php" method="POST">
+              <div>
+                <label>Name</label><br />
+                <input
+                  type="text"
+                  name="name"
+                  onfocus="this.value=''"
+                  placeholder="Name"
+                />
+              </div>
+              <div>
+                <label>Email Id</label><br />
+                <input
+                  type="text"
+                  style="font-weight: bold;"
+                  onfocus="this.value=''"
+                  name="email_id"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div>
+                <label>Your Queries</label><br />
+                <textarea
+                  name="question"
+                  style="font-weight: bold;"
+                  onfocus="this.value=''"
+                  placeholder="Write Your Queries..."
+                ></textarea>
+              </div>
+              <button class="button_1" type="submit">Send</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

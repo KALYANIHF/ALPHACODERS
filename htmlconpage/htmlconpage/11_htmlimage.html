@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 20px;
+      }
+      ol li,
+      dl {
+        font-size: 20px;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+       #left,#right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+    img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    
+      #right {
+        float: right;
+      }
+    
+
+      /* p a{
+        text-decoration-color: blue;
+      }*/
+      b {
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Image</h1>
+    <p>
+      <b>HTML img tag</b> is used to display image on the web page. HTML img tag
+      is an empty tag that contains attributes only, closing tags are not used
+      in HTML image element. <br /><br />
+
+      Let's see an example of HTML image.
+    </p>
+    <img src="./htmlimage/htmlimage1.PNG" alt="example" />
+    <h3>Output:</h3>
+    <img src="./htmlimage/htmlimage2.PNG" alt="Output" />
+    <h1>Attributes of HTML img tag</h1>
+    <p>
+      The src and alt are important attributes of HTML img tag. All attributes
+      of HTML image tag are given below.
+    </p>
+    <h2>1) src</h2>
+    <p>
+      It is a necessary attribute that describes the source or path of the
+      image. It instructs the browser where to look for the image on the server.
+      <br /><br />
+      The location of image may be on the same directory or another server.
+    </p>
+    <h2>2) alt</h2>
+    <p>
+      The alt attribute defines an alternate text for the image, if it can't be
+      displayed. The value of the alt attribute describe the image in words. The
+      alt attribute is considered good for SEO prospective.
+    </p>
+    <h2>3) width</h2>
+    <p>
+      It is an optional attribute which is used to specify the width to display
+      the image. It is not recommended now. You should apply CSS in place of
+      width attribute.
+    </p>
+    <h2>4) height</h2>
+    <p>
+      It h3 the height of the image. The HTML height attribute also supports
+      iframe, image and object elements. It is not recommended now. You should
+      apply CSS in place of height attribute.
+    </p>
+    <h1>Use of height and width attribute with img tag</h1>
+    <p>
+      You have learnt about how to insert an image in your web page, now if we
+      want to give some height and width to display image according to our
+      requirement, then we can set it with height and width attributes of image.
+    </p>
+    <h2>Example:</h2>
+    <img src="./htmlimage/htmlimage3.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./htmlimage/htmlimage4.PNG" alt="Output" />
+    <img src="./htmlimage/htmlimage5.PNG" alt="note" />
+    <h1>Use of alt attribute</h1>
+    <p>
+      We can use alt attribute with tag. It will display an alternative text in
+      case if image cannot be displayed on browser. Following is the example for
+      alt attribute:
+    </p>
+    <img src="./htmlimage/htmlimage6.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./htmlimage/htmlimage7.PNG" alt="Output" />
+    <h1>How to get image from another directory/folder?</h1>
+    <p>
+      To insert an image in your web, that image must be present in your same
+      folder where you have put the HTML file. But if in some case image is
+      available in some other directory then you can access the image like this:
+    </p>
+    <img src="./htmlimage/htmlimage8.PNG" alt="Example" />
+    <p>
+      In above statement we have put image in local disk E------>images
+      folder------>animal.png.
+    </p>
+    <img src="./htmlimage/htmlimage9.PNG" alt="note" />
+    <h1>Use &lt;img> tag as a link</h1>
+    <p>
+      We can also link an image with other page or we can use an image as a
+      link. To do this, put &lt;img> tag inside the &lt;a> tag.
+    </p>
+    <h2>Example:</h2>
+    <img src="./htmlimage/htmlimage10.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./htmlimage/htmlimage11.PNG" alt="Output" /><br />
+    <h2>Supporting Browsers</h2>
+    <img src="./htmlimage/htmlimage12.PNG" alt="Browsers" />
+        <a href="10_htmlphrasetag.html"><button type="button" id="left">PREV</button></a>
+        <a href="12_html_global.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

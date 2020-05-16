@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      p {
+        margin-left: 1em;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PHP Constants</h1>
+    <p>
+      PHP constants are name or identifier that can't be changed during the
+      execution of the script. PHP constants can be defined by 2 ways:
+    </p>
+    <ol>
+      <li>Using define() function</li>
+      <li>Using const keyword</li>
+    </ol>
+    <p>
+      PHP constants follow the same PHP variable rules. For example, it can be
+      started with letter or underscore only.
+    </p>
+    <p>Conventionally, PHP constants should be defined in uppercase letters.</p>
+    <h1>PHP constant: define()</h1>
+    <p>Let's see the syntax of define() function in PHP.</p>
+    <img src="./images/cons.PNG" alt="constant" />
+    <ol>
+      <li>name: specifies the constant name</li>
+      <li>value: specifies the constant value</li>
+      <li>
+        case-insensitive: Default value is false. It means it is case sensitive
+        by default.
+      </li>
+    </ol>
+    <p>Let's see the example to define PHP constant using define().</p>
+    <p>File: constant1.php</p>
+    <img src="./images/cons1.PNG" alt="constant1" />
+    <p><b>Output:</b></p>
+    <img src="./images/cons2.PNG" alt="constant2" />
+    <p>File: constant2.php</p>
+    <img src="./images/cons3.PNG" alt="constant3" />
+    <p><b>Output:</b></p>
+    <img src="./images/cons4.PNG" alt="constant4" />
+    <p>File: constant3.php</p>
+    <img src="./images/cons5.PNG" alt="constant5" />
+    <p><b>Output:</b></p>
+    <img src="./images/cons6.PNG" alt="conntant6" />
+    <h1>PHP constant: const keyword</h1>
+    <p>
+      The const keyword defines constants at compile time. It is a language
+      construct not a function.
+    </p>
+    <p>It is bit faster than define().</p>
+    <p>It is always case sensitive.</p>
+    <p>File: constant4.php</p>
+    <img src="./images/cons7.PNG" alt="constant7" />
+    <p><b>Output</b></p>
+    <img src="./images/cons8.PNG" alt="constant8" />
+    <div>
+      <a href="phpdol.html"><button type="button" id="left">PREV</button></a>
+      <a href="phpdata.html"><button type="button" id="right">NEXT</button></a>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

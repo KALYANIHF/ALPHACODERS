@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      p {
+        margin-left: 1em;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PHP $ and $$ Variables</h1>
+    <p>
+      The <b>$var</b> (single dollar) is a normal variable with the name var
+      that stores any value like string, integer, float, etc.
+    </p>
+    <p>
+      The <b>$$var</b> (double dollar) is a reference variable that stores the
+      value of the $variable inside it.
+    </p>
+    <p>To understand the difference better, let's see some examples.</p>
+    <h2>Example 1</h2>
+    <img src="./images/dollar.PNG" alt="example" />
+    <p><b>Output:</b></p>
+    <img src="./images/dollar1.png" alt="example1" />
+    <p>
+      In the above example, we have assigned a value to the variable <b>x</b> as
+      <b>abc</b>. Value of reference variable <b>$$x</b> is assigned as
+      <b>200</b>.
+    </p>
+    <p>Now we have printed the values <b>$x</b>, <b>$$x</b> and <b>$abc</b>.</p>
+    <h2>Example2</h2>
+    <img src="./images/dollar3.PNG" alt="example3" />
+    <p><b>Output:</b></p>
+    <img src="./images/dollar4.png" alt="example4" />
+    <p>
+      In the above example, we have assigned a value to the variable <b>x</b> as
+      <b>U.P</b>. Value of reference variable <b>$$x</b> is assigned as
+      <b>Lucknow</b>.
+    </p>
+    <p>Now we have printed the values <b>$x</b>, <b>$$x</b> and a string.</p>
+    <h2>Example3</h2>
+    <img src="./images/dollar5.PNG" alt="example5" />
+    <p><b>Output:</b></p>
+    <img src="./images/dollar6.png" alt="example6" />
+    <p>
+      In the above example, we have assigned a value to the variable name
+      <b>Cat</b>. Value of reference variable <b>${$name}</b> is assigned as
+      <b>Dog</b> and <b>${${$name}}</b> as <b>Monkey</b>.
+    </p>
+    <p>
+      Now we have printed the values as <b>$name</b>, <b>${$name}</b>,
+      <b>$Cat</b>, <b>${${$name}}</b> and <b>$Dog</b>.
+    </p>
+    <div>
+      <a href="phpvari.html"><button type="button" id="left">PREV</button></a>
+      <a href="phpcon.html"><button type="button" id="right">NEXT</button></a>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

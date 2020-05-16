@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+      img {
+        display: block;
+        margin-left: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Applying SVG effects to HTML content</h1>
+    <p>
+      Modern browsers support using SVG within CSS styles to apply graphical
+      effects to HTML content. You may specify SVG in styles either within the
+      same document or an external style sheet. There are 3 properties you can
+      use: mask, clip-path, and filter.
+    </p>
+    <h2>Using embedded SVG</h2>
+    <p>
+      To apply an SVG effect using CSS styles, you first need to create the CSS
+      style that references the SVG to apply.
+    </p>
+    <div>
+      <pre>
+        &lt;style>
+        p {
+          mask: url(#my-mask);
+        }
+        &lt;/style>
+      </pre>
+    </div>
+    <p>
+      In the above example, all paragraphs are masked by an SVG &lt;mask> with
+      the ID my-mask.
+    </p>
+    <h2>Example: Masking</h2>
+    <p>
+      For example, you can make a gradient mask for HTML content using SVG and
+      CSS code similar to the following, inside your HTML document:
+    </p>
+    <img src="./images_svg/img15.PNG" alt="" />
+    <img src="./images_svg/img16.PNG" alt="" />
+    <p>
+      This establishes a clipping area made of a circle and rectangle, assigns
+      it the ID #clipping-path-1, then references it in the CSS. The clip path
+      can be assigned to any element with the target class.
+    </p>
+    <p>
+      You can make changes to the SVG in real time and see them immediately
+      affect the rendering of the HTML. For example, you can resize the circle
+      in the clip path established above
+    </p>
+    <div>
+      <pre>
+  function toggleRadius() {
+  var circle = document.getElementById("circle");
+  circle.r.baseVal.value = 0.40 - circle.r.baseVal.value;
+  }</pre
+      >
+    </div>
+    <img src="./images_svg/img17.PNG" alt="" />
+    <h3>Example: Filtering</h3>
+    <p>
+      This demonstrates applying a filter to HTML content using SVG. It
+      establishes several filters, which are applied with CSS to three elements
+      in both the normal and mouse hover states.
+    </p>
+    <img src="./images_svg/img18.PNG" alt="" />
+    <p>You could also apply a color matrix:</p>
+    <img src="./images_svg/img19.PNG" alt="" />
+    <h3>Example: Text Effects</h3>
+    <p>
+      SVG effects can also be used to add a more dynamic and flexible approach
+      to adding text compared to plain HTML text. By creating the text using SVG
+      elements combined with HTML you can make a variety of different text
+      effects. You can rotate the text:
+    </p>
+    <img src="./images_svg/img20.PNG" alt="" />
+    <a href="16_svgattribute.html"
+      ><button type="button" id="left">PREV</button></a
+    >
+    <a href="19_create3dobj.html"
+      ><button type="button" id="right">NEXT</button></a
+    >
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

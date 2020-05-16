@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+      img {
+        display: block;
+        margin-left: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Pixel manipulation with canvas</h1>
+    <p>
+      Until now we haven't looked at the actual pixels of our canvas. With the
+      ImageData object you can directly read and write a data array to
+      manipulate pixel data. We will also look into how image smoothing
+      (anti-aliasing) can be controlled and how to save images from your canvas.
+    </p>
+    <h2>The ImageData object</h2>
+    <p>
+      The ImageData object represents the underlying pixel data of an area of a
+      canvas object. It contains the following read-only attributes
+    </p>
+    <dl><b>width</b></dl>
+    <dt>The width of the image in pixels</dt>
+    <dl><b>height</b></dl>
+    <dt>The height of the image in pixels.</dt>
+    <dl><b>data</b></dl>
+    <dt>
+      A Uint8ClampedArray representing a one-dimensional array containing the
+      data in the RGBA order, with integer values between 0 and 255 (included).
+      The data property returns a Uint8ClampedArray which can be accessed to
+      look at the raw pixel data; each pixel is represented by four one-byte
+      values (red, green, blue, and alpha, in that order; that is, "RGBA"
+      format). Each color component is represented by an integer between 0 and
+      255. Each component is assigned a consecutive index within the array, with
+      the top left pixel's red component being at index 0 within the array.
+      Pixels then proceed from left to right, then downward, throughout the
+      array. The Uint8ClampedArray contains height × width × 4 bytes of data,
+      with index values ranging from 0 to (height×width×4)-1. For example, to
+      read the blue component's value from the pixel at column 200, row 50 in
+      the image, you would do the following:
+    </dt>
+    <h4>Example</h4>
+    <div>
+      <pre>
+blueComponent = imageData.data[((50 * (imageData.width * 4)) + (200 * 4)) + 2];</pre
+      >
+    </div>
+    <h4>Condition</h4>
+    <p>
+      If given a set of coordinates (X and Y), you may end up doing something
+      like this:
+    </p>
+    <h3>such as:</h3>
+    <div>
+      <pre>
+      var xCoord = 50;
+      var yCoord = 100;
+      var canvasWidth = 1024;
+      
+      function getColorIndicesForCoord(x, y, width) {
+      var red = y * (width * 4) + x * 4;
+      return [red, red + 1, red + 2, red + 3];
+      }
+      
+      var colorIndices = getColorIndicesForCoord(xCoord, yCoord, canvasWidth);
+      
+      var redIndex = colorIndices[0];
+      var greenIndex = colorIndices[1];
+      var blueIndex = colorIndices[2];
+      var alphaIndex = colorIndices[3];
+      
+      var redForCoord = imageData.data[redIndex];
+      var greenForCoord = imageData.data[greenIndex];
+      var blueForCoord = imageData.data[blueIndex];
+      var alphaForCoord = imageData.data[alphaIndex];</pre
+      >
+    </div>
+    <p>Or, if ES2015 is appropriate:</p>
+    <div>
+      <pre>
+      const xCoord = 50;
+      const yCoord = 100;
+      const canvasWidth = 1024;
+      
+      const getColorIndicesForCoord = (x, y, width) => {
+      const red = y * (width * 4) + x * 4;
+      return [red, red + 1, red + 2, red + 3];
+      };
+      
+      const colorIndices = getColorIndicesForCoord(xCoord, yCoord, canvasWidth);
+      
+      const [redIndex, greenIndex, blueIndex, alphaIndex] = colorIndices;</pre
+      >
+    </div>
+    <p>
+      You may also access the size of the pixel array in bytes by reading the
+      Uint8ClampedArray.length attribute:
+    </p>
+    <div>
+      <pre>var numBytes = imageData.data.length;</pre>
+    </div>
+    <h3>Creating an ImageData object</h3>
+    <p>
+      To create a new, blank ImageData object, you should use the
+      createImageData() method. There are two versions of the createImageData()
+      method:
+    </p>
+    <div>
+      <pre>var myImageData = ctx.createImageData(width, height);</pre>
+    </div>
+    <p>
+      This creates a new ImageData object with the specified dimensions. All
+      pixels are preset to transparent black (all zeroes i.e rgba(0,0,0,0)). You
+      can also create a new ImageData object with the same dimensions as the
+      object specified by anotherImageData. The new object's pixels are all
+      preset to transparent black. This does not copy the image data!
+    </p>
+
+    <a href="12_usingimg.html"><button type="button" id="left">PREV</button></a>
+    <a href="14_canvaselement.html"
+      ><button type="button" id="right">NEXT</button></a
+    >
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

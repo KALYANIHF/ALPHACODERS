@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      p {
+        margin-left: 1em;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>PHP Mail</h1>
+    <p>
+      PHP mail() function is used to send email in PHP. You can send text
+      message, html message and attachment with message using PHP mail()
+      function.
+    </p>
+    <h1>PHP mail() function</h1>
+    <p><b>Syntax</b></p>
+    <img src="./images/mail.PNG" alt="mail" />
+    <p>
+      <b>$to:</b> specifies receiver or receivers of the mail. The receiver must
+      be specified one of the following forms.
+    </p>
+    <ol>
+      <li>user@example.com</li>
+      <li>user@example.com anotheruser@example.com</li>
+      <li>User user@example.com user</li>
+      <li>User &lt; user@example.com>Another User</li>
+    </ol>
+    <p><b>$subject:</b>represents subject of the mail.</p>
+    <p><b>$message:</b>represents message of the mail to be sent.</p>
+    <p>
+      <b>$additional_headers (optional):</b> specifies the additional headers
+      such as From, CC, BCC etc. Extra additional headers should also be
+      separated with CRLF ( \r\n ).
+    </p>
+    <h1>PHP Mail Example</h1>
+    <p>File: mailer.php</p>
+    <img src="./images/mail1.PNG" alt="mail" />
+    <p>
+      If you run this code on the live server, it will send an email to the
+      specified receiver.
+    </p>
+    <h1>PHP Mail: Send HTML Message</h1>
+    <p>
+      To send HTML message, you need to mention Content-type text/html in the
+      message header.
+    </p>
+    <img src="./images/mail2.PNG" alt="mail" />
+    <h1>PHP Mail: Send Mail with Attachment</h1>
+    <p>
+      To send message with attachment, you need to mention many header
+      information which is used in the example given below.
+    </p>
+    <img src="./images/mail3.PNG" alt="" />
+    <img src="./images/mail4.PNG" alt="" />
+    <img src="./images/mail5.PNG" alt="" />
+    <div>
+      <a href="phpdown.html"><button type="button" id="left">PREV</button></a>
+      <a href="sqlcont.html"><button type="button" id="right">NEXT</button></a>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

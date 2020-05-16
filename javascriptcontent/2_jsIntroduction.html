@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+
+      img {
+        margin-left: 2em;
+        display: block;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Introduction</h1>
+    <p>
+      JavaScript is a high level language which is used in browser to add
+      security and functionality in the web pages
+    </p>
+    <h2>JavaScript Can Change HTML Content</h2>
+    <p>
+      One of many JavaScript HTML methods is getElementById(). This example uses
+      the method to "find" an HTML element (with id="demo") and changes the
+      element content (innerHTML) to "Hello JavaScript":
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>document.getElementById("demo").innerHTML = "Hello JavaScript";</p>
+    </div>
+    <h2>JavaScript Can Change HTML Attribute Values</h2>
+    <p>
+      In this example JavaScript changes the value of the src (source) attribute
+      of an <img /> tag:
+    </p>
+    <div style="min-height: 300px;">
+      <button
+        type="button"
+        onclick="document.getElementById('myImage').src='../img/expectation.jpg' "
+      >
+        Expectation
+      </button>
+
+      <img id="myImage" src="../img/reality.jpg" style="width:250px" />
+
+      <button
+        type="button"
+        onclick="document.getElementById('myImage').src='../img/reality.jpg'"
+      >
+        Reality
+      </button>
+    </div>
+    <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+    <p>
+      Changing the style of an HTML element, is a variant of changing an HTML
+      attribute:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>document.getElementById("demo").style.fontSize = "35px";</p>
+    </div>
+    <h2>JavaScript Can Hide HTML Elements</h2>
+    <p>Hiding HTML elements can be done by changing the display style:</p>
+    <h4>Example</h4>
+    <div>
+      <p>document.getElementById("demo").style.display = "none";</p>
+    </div>
+    <h2>JavaScript Can Show HTML Elements</h2>
+    <p>
+      Showing hidden HTML elements can also be done by changing the display
+      style:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>document.getElementById("demo").style.display = "block";</p>
+    </div>
+    <a href="1_Jshome.html"><button type="button" id="left">PREV</button></a>
+    <a href="3_jsOutput.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

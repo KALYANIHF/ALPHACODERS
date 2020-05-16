@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Introduction to SQL</h1>
+    <p>SQL is a standard language for accessing and manipulating databases.</p>
+    <h2>What is SQL?</h2>
+    <ul>
+      <li>SQL stands for Structured Query Language</li>
+      <li>SQL lets you access and manipulate databases</li>
+      <li>
+        SQL became a standard of the American National Standards Institute
+        (ANSI) in 1986, and of the International Organization
+      </li>
+      <li>for Standardization (ISO) in 1987</li>
+    </ul>
+    <h2>What Can SQL do?</h2>
+
+    <ul>
+      <li>SQL can execute queries against a database</li>
+      <li>SQL can retrieve data from a database</li>
+      <li>SQL can insert records in a database</li>
+      <li>SQL can update records in a database</li>
+      <li>SQL can delete records from a database</li>
+      <li>SQL can create new databases</li>
+      <li>SQL can create new tables in a database/li></li>
+      <li>SQL can create stored procedures in a database</li>
+      <li>SQL can create views in a database</li>
+      <li>SQL can set permissions on tables, procedures, and views</li>
+    </ul>
+    <h2>SQL is a Standard - BUT....</h2>
+    <p>
+      Although SQL is an ANSI/ISO standard, there are different versions of the
+      SQL language. However, to be compliant with the ANSI standard, they all
+      support at least the major commands (such as SELECT, UPDATE, DELETE,
+      INSERT, WHERE) in a similar manner.
+    </p>
+    <h1>Using SQL in Your Web Site</h1>
+    <p>To build a web site that shows data from a database, you will need:</p>
+    <ul>
+      <li>An RDBMS database program (i.e. MS Access, SQL Server, MySQL)</li>
+      <li>To use a server-side scripting language, like PHP or ASP</li>
+      <li>To use SQL to get the data you want</li>
+      <li>To use HTML / CSS to style the page</li>
+    </ul>
+    <h2>RDBMS</h2>
+    <p>
+      RDBMS stands for Relational Database Management System. RDBMS is the basis
+      for SQL, and for all modern database systems such as MS SQL Server, IBM
+      DB2, Oracle, MySQL, and Microsoft Access. The data in RDBMS is stored in
+      database objects called tables. A table is a collection of related data
+      entries and it consists of columns and rows.
+    </p>
+    <h2>Example</h2>
+    <div>
+      <p>SELECT * FROM Customers;</p>
+    </div>
+    <p>
+      Every table is broken up into smaller entities called fields. The fields
+      in the Customers table consist of CustomerID, CustomerName, ContactName,
+      Address, City, PostalCode and Country. A field is a column in a table that
+      is designed to maintain specific information about every record in the
+      table. A record, also called a row, is each individual entry that exists
+      in a table. For example, there are 91 records in the above Customers
+      table. A record is a horizontal entity in a table. A column is a vertical
+      entity in a table that contains all information associated with a specific
+      field in a table.
+    </p>
+    <a href="2_sqlhome.html"><button type="button" id="left">PREV</button></a>
+    <a href="4_sqlselectdis.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

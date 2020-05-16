@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 20px;
+      }
+      ol li,
+      dl {
+        font-size: 20px;
+      }
+       #left,#right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+    img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    
+      #right {
+        float: right;
+      }
+    
+
+      /* p a{
+        text-decoration-color: blue;
+      }*/
+      b {
+        font-size: 17px;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Table</h1>
+    <p>
+      <b>HTML table tag</b> is used to display data in tabular form (row *
+      column). There can be many columns in a row. <br /><br />
+
+      We can create a table to display data in tabular form, using &lt;table>
+      element, with the help of &lt;tr> , &lt;td>, and &lt;th> elements.
+      <br /><br />
+
+      In Each table, table row is defined by &lt;tr> tag, table header is
+      defined by &lt;th>, and table data is defined by &lt;td> tags.
+      <br /><br />
+
+      HTML tables are used to manage the layout of the page e.g. header section,
+      navigation bar, body content, footer section etc. But it is recommended to
+      use div tag over table to manage the layout of the page .
+    </p>
+    <h1>HTML Table Tags</h1>
+    <img src="./html_table/htmltable1.PNG" alt="tags" />
+    <h1>HTML Table Example</h1>
+    <p>Let's see the example of HTML table tag. It output is shown above.</p>
+    <img src="./html_table/htmltable2.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./html_table/htmltable3.PNG" alt="Output" />
+    <h1>HTML Table with Border</h1>
+    <p>There are two ways to specify border for HTML tables.</p>
+    <ol>
+      <li>By border attribute of table in HTML</li>
+      <li>By border property in CSS</li>
+    </ol>
+    <h1>1) HTML Border attribute</h1>
+    <p>
+      You can use border attribute of table tag in HTML to specify border. But
+      it is not recommended now.
+    </p>
+    <img src="./html_table/htmltable4.PNG" alt="border" />
+    <h3>Output:</h3>
+    <img src="./html_table/htmltable5.PNG" alt="Output" />
+    <h1>2) CSS Border property</h1>
+    <p>
+      It is now recommended to use border property of CSS to specify border in
+      table.
+    </p>
+    <img src="./html_table/htmltable6.PNG" alt="example" />
+    <p>
+      You can collapse all the borders in one border by border-collapse
+      property. It will collapse the border into one.
+    </p>
+    <img src="./html_table/htmltable7.PNG" alt="code" />
+    <h3>Output:</h3>
+    <img src="./html_table/htmltable8.PNG" alt="Output" />
+    <h1>HTML Table with cell padding</h1>
+    <p>You can specify padding for table header and table data by two ways:</p>
+    <ol>
+      <li>By cellpadding attribute of table in HTML</li>
+      <li>By padding property in CSS</li>
+    </ol>
+    <p>
+      The cellpadding attribute of HTML table tag is obselete now. It is
+      recommended to use CSS. So let's see the code of CSS.
+    </p>
+    <img src="./html_table/htmltable9.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./html_table/htmltable10.PNG" alt="Output" />
+    <h1>HTML Table width:</h1>
+    <p>
+      We can specify the HTML table width using the <b>CSS width</b> property.
+      It can be specify in pixels or percentage. <br /><br />
+
+      We can adjust our table width as per our requirement. Following is the
+      example to display table with width.
+    </p>
+    <img src="./html_table/htmltable11.PNG" alt="code" />
+    <h2>Example:</h2>
+    <img src="./html_table/htmltable12.PNG" alt="Example" />
+    <img src="./html_table/htmltable13.PNG" alt="example" />
+    <h3>Output:</h3>
+    <img src="./html_table/htmltable14.PNG" alt="Output" />
+    <h1>HTML Table with colspan</h1>
+    <p>
+      If you want to make a cell span more than one column, you can use the
+      colspan attribute. <br /><br />
+
+      It will divide one cell/row into multiple columns, and the number of
+      columns depend on the value of colspan attribute. <br /><br />
+
+      Let's see the example that span two columns. <br /><br />
+
+      CSS code:
+    </p>
+    <img src="./html_table/htmltable15.PNG" alt="css code" />
+    <p>HTML code:</p>
+    <img src="./html_table/htmltable16.PNG" alt=" htmlcode" />
+    <h3>Output:</h3>
+    <img src="./html_table/htmltable17.PNG" alt="Output" />
+    <h1>HTML Table with rowspan</h1>
+    <p>
+      If you want to make a cell span more than one row, you can use the rowspan
+      attribute. <br /><br />
+
+      It will divide a cell into multiple rows. The number of divided rows will
+      depend on rowspan values. <br /><br />
+
+      Let's see the example that span two rows. <br /><br />
+
+      CSS code:
+    </p>
+    <img src="./html_table/htmltable18.PNG" alt="css code" />
+    <p>HTML code:</p>
+    <img src="./html_table/htmltable19.PNG" alt="html code" />
+    <h3>Output:</h3>
+    <img src="./html_table/htmltable20.PNG" alt="Output" />
+    <h1>HTML table with caption</h1>
+    <p>
+      HTML caption is diplayed above the table. It must be used after table tag
+      only.
+    </p>
+    <img src="./html_table/htmltable21.PNG" alt="code" />
+    <h1>Styling HTML table even and odd cells</h1>
+    <p>CSS code:</p>
+    <img src="./html_table/htmltable22.PNG" alt="css code" />
+    <h3>Output:</h3>
+    <img src="./html_table/htmltable23.PNG" alt="Output" />
+    <img src="./html_table/htmltable24.PNG" alt="note" />
+    <h2>Supporting Browsers:</h2>
+    <img src="./html_table/htmltable25.PNG" alt="Browsers" />
+        <a href="14_html_video.html"><button type="button" id="left">PREV</button></a>
+        <a href="16_html_form.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

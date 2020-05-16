@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      p {
+        margin-left: 1em;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PHP MySQL Connect</h1>
+    <p>
+      Since PHP 5.5,<b> mysql_connect()</b> extension is deprecated. Now it is
+      recommended to use one of the 2 alternatives.
+    </p>
+    <ol>
+      <li><b>mysqli_connect()</b></li>
+      <li><b>PDO::__construct()</b></li>
+    </ol>
+    <h1>PHP mysqli_connect()</h1>
+    <p>
+      PHP <b>mysqli_connect()</b> function is used to connect with MySQL
+      database. It returns resource if connection is established or null.
+    </p>
+    <p><b>Syntax</b></p>
+    <img src="./images/sqlcon.PNG" alt="connect" />
+    <h1>PHP mysqli_close()</h1>
+    <p>
+      PHP <b>mysqli_close()</b> function is used to disconnect with MySQL
+      database. It returns true if connection is closed or false.
+    </p>
+    <p><b>Syntax</b></p>
+    <img src="./images/sqlcon1.PNG" alt="connect" />
+    <h1>PHP MySQL Connect Example</h1>
+    <p><b>Example</b></p>
+    <img src="./images/sqlcon2.PNG" alt="connect" />
+    <p><b>Output</b></p>
+    <img src="./images/sqlcon3.PNG" alt="connect" />
+    <div>
+      <a href="phpmail.html"><button type="button" id="left">PREV</button></a>
+      <a href="sqldb.html"><button type="button" id="right">NEXT</button></a>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

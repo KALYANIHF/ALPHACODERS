@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SQL SELECT DISTINCT Statement</h1>
+    <p>
+      The SELECT DISTINCT statement is used to return only distinct (different)
+      values. Inside a table, a column often contains many duplicate values; and
+      sometimes you only want to list the different (distinct) values.
+    </p>
+    <h3>SELECT DISTINCT Syntax</h3>
+    <div>
+      <p>SELECT DISTINCT column1, column2, ... FROM table_name;</p>
+    </div>
+    <h3>Demo Database</h3>
+    <img src="../img/tablesql.png" alt="" />
+    <h2>SELECT Example Without DISTINCT</h2>
+    <p>
+      The following SQL statement selects ALL (including the duplicates) values
+      from the "Country" column in the "Customers" table:
+    </p>
+    <h3>Example</h3>
+    <div>
+      <p>
+        SELECT DISTINCT Country FROM Customers;
+      </p>
+      <p>
+        SELECT COUNT(DISTINCT Country) FROM Customers;
+      </p>
+      <p>
+        SELECT Count(*) AS DistinctCountries FROM (SELECT DISTINCT Country FROM
+        Customers);
+      </p>
+    </div>
+
+    <a href="3_sqlintro.html"><button type="button" id="left">PREV</button></a>
+    <a href="5_sqlwhere.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LOG IN | ADMIN</title>
+    <link rel="stylesheet" href="css\style13.css" />
+    <link rel="icon" href="./img/alphacoders.png" />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-5.11.2-web/fontawesome-free-5.11.2-web/css/all.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span id="col">Alpha</span> Coders</h1>
+        </div>
+      </div>
+    </header>
+    <section id="showcase">
+      <div class="container">
+        <form action="userstat.php" method="post">
+          <h1>ADMIN USER_STAT</h1>
+          <div>
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div>
+            <label for="admin_id">admin_id</label>
+            <input
+              type="text"
+              id="admin_id"
+              placeholder="mustbe-10-char"
+              name="admin_id"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="mustbe-8-char"
+              name="psw"
+              required
+            />
+          </div>
+          <br />
+          <br />
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+          <br />
+          <!-- <a href="signupadmin.html"><button type="button">SIGN_IN</button></a> -->
+        </form>
+        <br />
+      </div>
+    </section>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

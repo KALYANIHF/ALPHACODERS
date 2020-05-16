@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      p {
+        margin-left: 1em;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PHP Functions</h1>
+    <p>
+      PHP function is a piece of code that can be reused many times. It can take
+      input as argument list and return value. There are thousands of built-in
+      functions in PHP.
+    </p>
+    <p>
+      In PHP, we can define
+      <b> Conditional function, Function within Function</b> and
+      <b>Recursive function</b> also.
+    </p>
+    <h1>Advantage of PHP Functions</h1>
+    <p>
+      <b>Code Reusability:</b>PHP functions are defined only once and can be
+      invoked many times, like in other programming languages.
+    </p>
+    <p>
+      <b>Less Code:</b>It saves a lot of code because you don't need to write
+      the logic many times. By the use of function, you can write the logic only
+      once and reuse it.
+    </p>
+    <p>
+      <b>Easy to understand:</b>PHP functions separate the programming logic. So
+      it is easier to understand the flow of the application because every logic
+      is divided in the form of functions.
+    </p>
+    <h1>PHP User-defined Functions</h1>
+    <p>
+      We can declare and call user-defined functions easily. Let's see the
+      syntax to declare user-defined functions.
+    </p>
+    <h2>Syntax</h2>
+    <br />
+    <img src="./images/function.PNG" alt="Function" />
+    <h2>PHP Functions Example</h2>
+    <p>File: function1.php</p>
+    <img src="./images/function1.PNG" alt="Function" />
+    <p><b>Output:</b></p>
+    <img src="./images/function2.PNG" alt="Function" />
+    <h1>PHP Function Arguments</h1>
+    <p>
+      We can pass the information in PHP function through arguments which is
+      separated by comma.
+    </p>
+    <p>
+      PHP supports <b>Call by Value</b> (default),
+      <b>Call by Reference, Default argument values</b> and
+      <b>Variable-length argument list.</b>
+    </p>
+    <p>Let's see the example to pass single argument in PHP function.</p>
+    <p>File: functionarg.php</p>
+    <img src="./images/function3.PNG" alt="Function" />
+    <p><b>Output:</b></p>
+    <img src="./images/function4.PNG" alt="Function" />
+    <p>Let's see the example to pass two argument in PHP function.</p>
+    <p>File: functionarg2.php</p>
+    <img src="./images/function5.PNG" alt="Function" />
+    <p><b>Output:</b></p>
+    <img src="./images/function6.PNG" alt="Function" />
+    <h1>PHP Call By Reference</h1>
+    <p>
+      Value passed to the function doesn't modify the actual value by default
+      (call by value). But we can do so by passing value as a reference.
+    </p>
+    <p>
+      By default, value passed to the function is call by value. To pass value
+      as a reference, you need to use ampersand (&) symbol before the argument
+      name.
+    </p>
+    <p>Let's see a simple example of call by reference in PHP.</p>
+    <p>File: functionref.php</p>
+    <img src="./images/function7.PNG" alt="Function" />
+    <p><b>Output:</b></p>
+    <img src="./images/function8.PNG" alt="Function" />
+    <h1>PHP Function: Default Argument Value</h1>
+    <p>
+      We can specify a default argument value in function. While calling PHP
+      function if you don't specify any argument, it will take the default
+      argument. Let's see a simple example of using default argument value in
+      PHP function.
+    </p>
+    <p>File: functiondefaultarg.php</p>
+    <img src="./images/function9.PNG" alt="Function" />
+    <p><b>Output:</b></p>
+    <img src="./images/function10.PNG" alt="Function" />
+    <h1>PHP Function: Returning Value</h1>
+    <p>Let's see an example of PHP function that returns value.</p>
+    <p>File: functiondefaultarg.php</p>
+    <img src="./images/function11.PNG" alt="Function" />
+    <p><b>Output:</b></p>
+    <img src="./images/function12.PNG" alt="Function" />
+    <div>
+      <a href="phpcommen.html"><button type="button" id="left">PREV</button></a>
+      <a href="phparay.html"><button type="button" id="right">NEXT</button></a>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

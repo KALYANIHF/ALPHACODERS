@@ -1,0 +1,150 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 20px;
+  min-height: 60px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+#col {
+  color: rgb(255, 0, 0);
+}
+header li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+header a:hover {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+#showcase {
+  min-height: 485px;
+  background: url("../img/showcase.jpg") no-repeat 0 -460px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h1 {
+  margin-top: 30px;
+  font-size: 55px;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+form {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 18px;
+}
+form h1 {
+  color: #000;
+}
+form label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 5px 32px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+button[type="submit"],
+button[type="reset"],
+button[type="button"] {
+  padding: 8px 15px;
+  border: 2px solid #000;
+  margin-bottom: 4px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: rgb(255, 0, 0);
+  margin-top: 8px;
+  color: #000;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover,
+button[type="button"]:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+#showcase p {
+  font-size: 20px;
+}
+footer {
+  padding: 2px;
+  margin-top: 0px;
+  color: #ffffff;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  header #branding,
+  header nav {
+    float: none;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+  #showcase {
+    min-height: 350;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+  /*#shink{
+  	margin-top: 4rem;
+  }*/
+}

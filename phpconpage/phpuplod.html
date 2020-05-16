@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+      p {
+        margin-left: 1em;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>PHP File Upload</h1>
+    <p>
+      PHP allows you to upload single and multiple files through few lines of
+      code only.
+    </p>
+    <p>
+      PHP file upload features allows you to upload binary and text files both.
+      Moreover, you can have the full control over the file to be uploaded
+      through PHP authentication and file operation functions.
+    </p>
+    <h1>PHP $_FILES</h1>
+    <p>
+      The PHP global $_FILES contains all the information of file. By the help
+      of $_FILES global, we can get file name, file type, file size, temp file
+      name and errors associated with file.
+    </p>
+    <p>Here, we are assuming that file name is filename.</p>
+    <h2>$_FILES['filename']['name']</h2>
+    <p>returns file name.</p>
+    <h2>$_FILES['filename']['type']</h2>
+    <p>returns MIME type of the file.</p>
+    <h2>$_FILES['filename']['size']</h2>
+    <p>returns size of the file (in bytes).</p>
+    <h2>$_FILES['filename']['tmp_name']</h2>
+    <p>
+      returns temporary file name of the file which was stored on the server.
+    </p>
+    <h2>$_FILES['filename']['error']</h2>
+    <p>returns error code associated with this file.</p>
+    <h1>move_uploaded_file() function</h1>
+    <p>
+      The move_uploaded_file() function moves the uploaded file to a new
+      location. The move_uploaded_file() function checks internally if the file
+      is uploaded thorough the POST request. It moves the file if it is uploaded
+      through the POST request.
+    </p>
+    <p><b>Syntax</b></p>
+    <img src="./images/uplod.PNG" alt="upload" />
+    <h1>PHP File Upload Example</h1>
+    <p>File: uploadform.html</p>
+    <img src="./images/uplod1.PNG" alt="upload" />
+    <p>File: uploader.php</p>
+    <img src="./images/uplod2.PNG" alt="upload" />
+    <div>
+      <a href="phpfhand.html"><button type="button" id="left">PREV</button></a>
+      <a href="phpdown.html"><button type="button" id="right">NEXT</button></a>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

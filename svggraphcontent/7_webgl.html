@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+      img {
+        display: block;
+        margin-left: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>WebGL(Web Graphics Library)</h1>
+    <p>
+      WebGL is a JavaScript API for rendering high-performance interactive 3D
+      and 2D graphics within any compatible web browser without the use of
+      plug-ins. WebGL does so by introducing an API that closely conforms to
+      OpenGL ES 2.0 that can be used in HTML5 &lt;canvas> elements. This
+      conformance makes it possible for the API to take advantage of hardware
+      graphics acceleration provided by the user's device. Support for WebGL is
+      present in Firefox 4+, Google Chrome 9+, Opera 12+, Safari 5.1+, Internet
+      Explorer 11+, and Microsoft Edge build 10240+; however, the user's device
+      must also have hardware that supports these features. The WebGL 2 API
+      introduces support for much of the OpenGL ES 3.0 feature set; it's
+      provided through the WebGL2RenderingContext interface. The &lt;canvas>
+      element is also used by the Canvas API to do 2D graphics on web pages.
+    </p>
+    <h3>Before you start</h3>
+    <p>
+      Using the &lt;canvas> element is not very difficult, but you do need a
+      basic understanding of HTML and JavaScript. The &lt;canvas> element and
+      WebGL are not supported in some older browsers, but are supported in
+      recent versions of all major browsers. In order to draw graphics on the
+      canvas we use a JavaScript context object, which creates graphics on the
+      fly
+    </p>
+    <h4>How to set up a WebGL context?</h4>
+    <p>
+      WebGL enables web content to use an API based on OpenGL ES 2.0 to perform
+      2D and 3D rendering in an HTML canvas in browsers that support it without
+      the use of plug-ins. WebGL programs consist of control code written in
+      JavaScript and shader code (GLSL) that is executed on a computer's
+      Graphics Processing Unit (GPU). WebGL elements can be mixed with other
+      HTML elements and composited with other parts of the page or page
+      background. This article will introduce you to the basics of using WebGL.
+      It's assumed that you already have an understanding of the mathematics
+      involved in 3D graphics, and this article doesn't pretend to try to teach
+      you 3D graphics concepts itself. The code examples in this tutorial can
+      also be found in the webgl-examples GitHub repository. It's worth noting
+      here that this series of articles introduces WebGL itself; however, there
+      are a number of frameworks available that encapsulate WebGL's
+      capabilities, making it easier to build 3D applications and games, such as
+      THREE.js.
+    </p>
+    <h2>Preparing to render in 3D</h2>
+    <p>
+      The first thing you need in order to use WebGL for rendering is a canvas.
+      The HTML fragment below declares a canvas that our sample will draw into.
+    </p>
+    <div>
+      <pre>
+        &lt;body>
+        &lt;canvas id="glCanvas" width="640" height="480">&lt;canvas>
+      &lt;/body>
+    </pre
+      >
+    </div>
+    <h2>Preparing the WebGL context</h2>
+    <p>
+      The main() function in our JavaScript code, is called when our script is
+      loaded. Its purpose is to set up the WebGL context and start rendering
+      content.
+    </p>
+    <div>
+      <pre>
+      //
+      // start here
+      //
+      function main() {
+      const canvas = document.querySelector("#glCanvas");
+      // Initialize the GL context
+      const gl = canvas.getContext("webgl");
+      
+      // Only continue if WebGL is available and working
+      if (gl === null) {
+      alert("Unable to initialize WebGL. Your browser or machine may not support it.");
+      return;
+      }
+      
+      // Set clear color to black, fully opaque
+      gl.clearColor(0.0, 0.0, 0.0, 1.0);
+      // Clear the color buffer with specified clear color
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      }
+      
+      window.onload = main;</pre
+      >
+    </div>
+    <p>
+      The first thing we do here is obtain a reference to the canvas, assigning
+      it to a variable named canvas. Once we have the canvas, we try to get a
+      WebGLRenderingContext for it by calling getContext and passing it the
+      string "webgl". If the browser does not support webgl getContext will
+      return null in which case we will display a message to the user and exit.
+      If the context is successfully initialized, the variable gl is our
+      reference to it. In this case, we set the clear color to black, and clear
+      the context to that color (redrawing the canvas with the background
+      color). At this point, you have enough code that the WebGL context should
+      successfully initialize, and you should wind up with a big black, empty
+      box, ready and waiting to receive content.
+    </p>
+    <a href="6_canvas.html"><button type="button" id="left">PREV</button></a>
+    <a href="8_audio&vedio.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+    
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+    
+      img {
+        margin-left: 2em;
+        display: block;
+      }
+    
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+    
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    
+      #right {
+        float: right;
+      }
+    
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      JavaScript Number Methods
+    </h1>
+    <br />
+    <h2>
+      Number Methods and Properties
+    </h2>
+    <br />
+    <p>
+      Primitive values (like 3.14 or 2014), cannot have properties and methods
+      (because they are not objects). But with JavaScript, methods and
+      properties are also available to primitive values, because JavaScript
+      treats primitive values as objects when executing methods and properties.
+    </p>
+    <br />
+    <h2>
+      The toString() Method
+    </h2>
+    <br />
+    <p>
+      The toString() method returns a number as a string. All number methods can
+      be used on any type of numbers (literals, variables, or expressions):
+    </p>
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = 123;
+            x.toString();            // returns 123 from variable x
+           (123).toString();        // returns 123 from literal 123
+           (100 + 23).toString();   // returns 123 from expression 100 + 23
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      The toExponential() Method
+    </h2>
+    <br />
+    <p>
+      toExponential() returns a string, with a number rounded and written using
+      exponential notation. A parameter defines the number of characters behind
+      the decimal point:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = 9.656;
+            x.toExponential(2);     // returns 9.66e+0
+            x.toExponential(4);     // returns 9.6560e+0
+            x.toExponential(6);     // returns 9.656000e+0
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      The parameter is optional. If you don't specify it, JavaScript will not
+      round the number.
+    </p>
+    <br />
+    <h2>
+      The toFixed() Method
+    </h2>
+    <br />
+    <p>
+      toFixed() returns a string, with the number written with a specified
+      number of decimals:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = 9.656;
+            x.toFixed(0);           // returns 10
+            x.toFixed(2);           // returns 9.66
+            x.toFixed(4);           // returns 9.6560
+            x.toFixed(6);           // returns 9.656000
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      The toPrecision() Method
+    </h2>
+    <br />
+    <p>
+      toPrecision() returns a string, with a number written with a specified
+      length:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = 9.656;
+            x.toPrecision();        // returns 9.656
+            x.toPrecision(2);       // returns 9.7
+            x.toPrecision(4);       // returns 9.656
+            x.toPrecision(6);       // returns 9.65600
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      The valueOf() Method
+    </h2>
+    <br />
+    <p>
+      valueOf() returns a number as a number.
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = 123;
+            x.valueOf();            // returns 123 from variable x
+            (123).valueOf();        // returns 123 from literal 123
+            (100 + 23).valueOf();   // returns 123 from expression 100 + 23
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      In JavaScript, a number can be a primitive value (typeof = number) or an
+      object (typeof = object). The valueOf() method is used internally in
+      JavaScript to convert Number objects to primitive values. There is no
+      reason to use it in your code.
+    </p>
+    <br />
+    <h2>
+      Converting Variables to Numbers
+    </h2>
+    <br />
+    <p>
+      There are 3 JavaScript methods that can be used to convert variables to
+      numbers: The Number() method The parseInt() method The parseFloat() method
+      These methods are not number methods, but global JavaScript methods.
+    </p>
+    <br />
+    <h2>
+      Global JavaScript Methods
+    </h2>
+    <br />
+    <p>
+      JavaScript global methods can be used on all JavaScript data types. These
+      are the most relevant methods, when working with numbers:
+    </p>
+    <img src="../img/numbermethods1.PNG" alt="" />
+    <br />
+    <h2>
+      The Number() Method
+    </h2>
+    <br />
+    <p>
+      Number() can be used to convert JavaScript variables to numbers:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            Number(true);          // returns 1
+            Number(false);         // returns 0
+            Number("10");          // returns 10
+            Number("  10");        // returns 10
+            Number("10  ");        // returns 10
+            Number(" 10  ");       // returns 10
+            Number("10.33");       // returns 10.33
+            Number("10,33");       // returns NaN
+            Number("10 33");       // returns NaN
+            Number("John");        // returns NaN  
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      The Number() Method Used on Dates
+    </h2>
+    <br />
+    <p>
+      Number() can also convert a date to a number:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            Number(new Date("2017-09-30"));    // returns 1506729600000
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      The parseInt() Method
+    </h2>
+    <br />
+    <p>
+      parseInt() parses a string and returns a whole number. Spaces are allowed.
+      Only the first number is returned:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            parseInt("10");         // returns 10
+            parseInt("10.33");      // returns 10
+            parseInt("10 20 30");   // returns 10
+            parseInt("10 years");   // returns 10
+            parseInt("years 10");   // returns NaN 
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      If the number cannot be converted, NaN (Not a Number) is returned.
+    </p>
+    <br />
+    <h2>
+      The parseFloat() Method
+    </h2>
+    <br />
+    <p>
+      parseFloat() parses a string and returns a number. Spaces are allowed.
+      Only the first number is returned:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            parseFloat("10");        // returns 10
+            parseFloat("10.33");     // returns 10.33
+            parseFloat("10 20 30");  // returns 10
+            parseFloat("10 years");  // returns 10
+            parseFloat("years 10");  // returns NaN
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      Number Properties
+    </h2>
+    <br />
+    <img src="../img/numbermethods2.PNG" alt="" />
+    <br />
+    <h2>
+      JavaScript MIN_VALUE and MAX_VALUE
+    </h2>
+    <br />
+    <p>
+      MAX_VALUE returns the largest possible number in JavaScript.
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = Number.MAX_VALUE;
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      MIN_VALUE returns the lowest possible number in JavaScript.
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = Number.MIN_VALUE;
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      JavaScript POSITIVE_INFINITY
+    </h2>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = Number.POSITIVE_INFINITY;
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      POSITIVE_INFINITY is returned on overflow:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = 1 / 0;
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      JavaScript NEGATIVE_INFINITY
+    </h2>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = Number.NEGATIVE_INFINITY;
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      NEGATIVE_INFINITY is returned on overflow:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = -1 / 0;
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      JavaScript NaN - Not a Number
+    </h2>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = Number.NaN;
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      NaN is a JavaScript reserved word indicating that a number is not a legal
+      number. Trying to do arithmetic with a non-numeric string will result in
+      NaN (Not a Number):
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = 100 / "Apple";  // x will be NaN (Not a Number)
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      Number Properties Cannot be Used on Variables
+    </h2>
+    <br />
+    <p>
+      Number properties belongs to the JavaScript's number object wrapper called
+      Number. These properties can only be accessed as Number.MAX_VALUE. Using
+      myNumber.MAX_VALUE, where myNumber is a variable, expression, or value,
+      will return undefined:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = 6;
+            var y = x.MAX_VALUE;    // y becomes undefined
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      Complete JavaScript Number Reference
+    </h2>
+    <br />
+    <p>
+      For a complete reference, go to our Complete JavaScript Number Reference.
+      The reference contains descriptions and examples of all Number properties
+      and methods.
+    </p>
+    <a href="13_jsEvents.html"><button type="button" id="left">PREV</button></a>
+    <a href="15_jsloopwhile.html"><button type="button" id="right">NEXT</button></a>
+    
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

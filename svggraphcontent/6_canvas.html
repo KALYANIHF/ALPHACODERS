@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+      img {
+        display: block;
+        margin-left: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>What is canvas</h1>
+    <p>
+      The Canvas API provides a means for drawing graphics via JavaScript and
+      the HTML &lt;canvas> element. Among other things, it can be used for
+      animation, game graphics, data visualization, photo manipulation, and
+      real-time video processing. The Canvas API largely focuses on 2D graphics.
+      The WebGL API, which also uses the &lt;canvas> element, draws
+      hardware-accelerated 2D and 3D graphics.
+    </p>
+    <h3>Basic example</h3>
+    <p>This simple example draws a green rectangle onto a canvas.</p>
+    <h3>HTML:</h3>
+    <div>
+      <pre>&lt;canvas id="canvas">&lt;/canvas></pre>
+    </div>
+    <h3>JavaScript:</h3>
+    <p>
+      The Document.getElementById() method gets a reference to the HTML
+      &lt;canvas> element. Next, the HTMLCanvasElement.getContext() method gets
+      that element's context—the thing onto which the drawing will be rendered.
+      The actual drawing is done using the CanvasRenderingContext2D interface.
+      The fillStyle property makes the rectangle green. The fillRect() method
+      places its top-left corner at (10, 10), and gives it a size of 150 units
+      wide by 100 tall.
+    </p>
+    <div>
+      <pre>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+      
+      ctx.fillStyle = 'green';
+      ctx.fillRect(10, 10, 150, 100);</pre
+      >
+    </div>
+    <h3>result:</h3>
+    <img src="./images_svg/img8.PNG" alt="" />
+    <a href="5_svg.html"><button type="button" id="left">PREV</button></a>
+    <a href="7_webgl.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

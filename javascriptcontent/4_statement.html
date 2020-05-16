@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      display: inline-block;
+      background-color: #000000;
+      color: #fff;
+      margin-left: 0.5em;
+      font-weight: bold;
+    }
+  
+    p {
+      margin-left: 1.5em;
+      margin-right: 1em;
+      font-size: 17px;
+      line-height: 20.5px;
+      display: block;
+    }
+  
+    img {
+      margin-left: 2em;
+      display: block;
+    }
+  
+    #left,
+    #right {
+      margin-top: 5px;
+      padding: 8px 15px;
+      background-color: green;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      border: 2px solid #000;
+    }
+  
+    #left:hover,
+    #right:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  
+    #right {
+      float: right;
+    }
+  
+    footer {
+      padding: 5px;
+      margin-top: 5px;
+      color: #ffffff;
+      background-color: #e8491d;
+      text-align: center;
+    }
+    div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+  </style>
+  </head>
+
+  <body>
+    <h1>JavaScript Statements</h1>
+    <p>JavaScript Programs</p>
+    <div>
+      <p>
+        A computer program is a list of "instructions" to be "executed" by a
+        computer. In a programming language, these programming instructions are
+        called statements. A JavaScript program is a list of programming
+        statements.
+      </p>
+    </div>
+    <h2>JavaScript Statements</h2>
+    <p>
+      JavaScript statements are composed of: Values, Operators, Expressions,
+      Keywords, and Comments. This statement tells the browser to write "Hello
+      Dolly." inside an HTML element with id="demo":
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>document.getElementById("demo").innerHTML = "Hello Dolly.";</p>
+    </div>
+    <h2>Semicolons ;</h2>
+    <p>
+      Semicolons separate JavaScript statements. Add a semicolon at the end of
+      each executable statement:
+    </p>
+    <div>
+      <pre>
+         var a, b, c; // Declare 3 variables
+         a = 5;       // Assign the value 5 to a
+         b = 6;       // Assign the value 6 to b 
+         c = a + b;   // Assign the sum of a and b to c
+      </pre>
+    </div>
+    <p>
+      When separated by semicolons, multiple statements on one line are allowed:
+    </p>
+    <h2>JavaScript White Space</h2>
+    <p>
+      JavaScript ignores multiple spaces. You can add white space to your script
+      to make it more readable. The following lines are equivalent:
+    </p>
+    <h2>JavaScript Line Length and Line Breaks</h2>
+    <p>
+      For best readability, programmers often like to avoid code lines longer
+      than 80 characters. If a JavaScript statement does not fit on one line,
+      the best place to break it is after an operator:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <pre>
+            document.getElementById("demo").innerHTML =
+            "Hello Dolly!";
+      </pre>
+    </div>
+    <h2>JavaScript Code Blocks</h2>
+    <p>
+      JavaScript statements can be grouped together in code blocks, inside curly
+      brackets {...}. The purpose of code blocks is to define statements to be
+      executed together. One place you will find statements grouped together in
+      blocks, is in JavaScript functions:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>
+        function myFunction() { document.getElementById("demo1").innerHTML =
+        "Hello Dolly!"; document.getElementById("demo2").innerHTML = "How are
+        you?"; }
+      </p>
+    </div>
+    <h2>JavaScript Keywords</h2>
+    <p>
+      JavaScript statements often start with a keyword to identify the
+      JavaScript action to be performed. Visit our Reserved Words reference to
+      view a full list of JavaScript keywords. Here is a list of some of the
+      keywords you will learn about in this tutorial:
+    </p>
+    <img src="../img/jstable.PNG" alt="" />
+    <a href="3_jsOutput.html"><button type="button" id="left">PREV</button></a>
+    <a href="5_syntex.html"><button type="button" id="right">NEXT</button></a>
+    
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

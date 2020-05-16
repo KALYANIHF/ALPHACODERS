@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      display: inline-block;
+      background-color: #000000;
+      color: #fff;
+      margin-left: 0.5em;
+      font-weight: bold;
+    }
+  
+    p {
+      margin-left: 1.5em;
+      margin-right: 1em;
+      font-size: 17px;
+      line-height: 20.5px;
+      display: block;
+    }
+  
+    img {
+      margin-left: 2em;
+      display: block;
+    }
+  
+    #left,
+    #right {
+      margin-top: 5px;
+      padding: 8px 15px;
+      background-color: green;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      border: 2px solid #000;
+    }
+  
+    #left:hover,
+    #right:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  
+    #right {
+      float: right;
+    }
+  
+    footer {
+      padding: 5px;
+      margin-top: 5px;
+      color: #ffffff;
+      background-color: #e8491d;
+      text-align: center;
+    }
+    div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+  </style>
+  </head>
+
+  <body>
+    <h1>
+      JavaScript While Loop
+    </h1>
+    <br />
+    <p>
+      Loops can execute a block of code as long as a specified condition is
+      true.
+    </p>
+    <br />
+    <h2>
+      The While Loop
+    </h2>
+    <br />
+    <p>
+      The while loop loops through a block of code as long as a specified
+      condition is true.
+    </p>
+    <br />
+    <h4>
+      Syntax
+    </h4>
+    <br />
+    <div>
+      <pre>
+        while (condition) {
+            // code block to be executed
+          }
+      </pre>
+    </div>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <p>
+      In the following example, the code in the loop will run, over and over
+      again, as long as a variable (i) is less than 10:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+        while (i < 10) {
+            text += "The number is " + i;
+            i++;
+          }
+      </pre>
+    </div>
+    <br />
+    <h2>
+      The Do/While Loop
+    </h2>
+    <br />
+    <p>
+      The do/while loop is a variant of the while loop. This loop will execute
+      the code block once, before checking if the condition is true, then it
+      will repeat the loop as long as the condition is true.
+    </p>
+    <br />
+    <h4>
+      Syntax
+    </h4>
+    <br />
+    <div>
+      <pre>
+        do {
+            // code block to be executed
+          }
+          while (condition);
+      </pre>
+    </div>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <p>
+      The example below uses a do/while loop. The loop will always be executed
+      at least once, even if the condition is false, because the code block is
+      executed before the condition is tested:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+        do {
+            text += "The number is " + i;
+            i++;
+          }
+          while (i < 10);
+      </pre>
+    </div>
+    <br />
+    <p>
+      Do not forget to increase the variable used in the condition, otherwise
+      the loop will never end!
+    </p>
+    <br />
+    <h2>
+      Comparing For and While
+    </h2>
+    <br />
+    <p>
+      If you have read the previous chapter, about the for loop, you will
+      discover that a while loop is much the same as a for loop, with statement
+      1 and statement 3 omitted. The loop in this example uses a for loop to
+      collect the car names from the cars array:
+    </p>
+    <br />
+    <h4>
+        Example
+    </h4>
+    <br />
+    <div>
+        <pre>
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+
+for (;cars[i];) {
+  text += cars[i] + "<br>";
+  i++;
+}
+        </pre>
+    </div>
+    <br />
+    <p>
+        The loop in this example uses a while loop to collect the car names from the cars array:
+    </p>
+    <br />
+    <h4>
+        Example
+    </h4>
+    <br />
+    <div>
+        <pre>
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+
+while (cars[i]) {
+  text += cars[i] + "<br>";
+  i++;
+}
+        </pre>
+    </div>
+    <a href="14_jsNumbermethod.html"><button type="button" id="left">PREV</button></a>
+    <a href="16_jsthiskey.html"><button type="button" id="right">NEXT</button></a>
+    
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+
+      img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SQL INSERT INTO Statement</h1>
+    <p>The INSERT INTO statement is used to insert new records in a table.</p>
+    <p>
+      It is possible to write the INSERT INTO statement in two ways. The first
+      way specifies both the column names and the values to be inserted:
+    </p>
+    <div>
+      <p>
+        INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1,
+        value2, value3, ...);
+      </p>
+    </div>
+    <p>
+      If you are adding values for all the columns of the table, you do not need
+      to specify the column names in the SQL query. However, make sure the order
+      of the values is in the same order as the columns in the table. The INSERT
+      INTO syntax would be as follows:
+    </p>
+    <div>
+      <p>INSERT INTO table_name VALUES (value1, value2, value3, ...);</p>
+    </div>
+    <h2>Demo Database</h2>
+    <p>
+      Below is a selection from the "Customers" table in the Northwind sample
+      database:
+    </p>
+    <img src="../img/newdb.png" alt="" />
+    <h2>INSERT INTO Example</h2>
+    <p>
+      The following SQL statement inserts a new record in the "Customers" table:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>
+        INSERT INTO Customers (CustomerName, ContactName, Address, City,
+        PostalCode, Country) VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21',
+        'Stavanger', '4006', 'Norway');
+      </p>
+    </div>
+    <p>The selection from the "Customers" table will now look like this:</p>
+    <img src="../img/custom.PNG" alt="" />
+    <h3>Insert Data Only in Specified Columns</h3>
+    <p>
+      It is also possible to only insert data in specific columns. The following
+      SQL statement will insert a new record, but only insert data in the
+      "CustomerName", "City", and "Country" columns (CustomerID will be updated
+      automatically):
+    </p>
+    <div>
+      <p>
+        INSERT INTO Customers (CustomerName, City, Country) VALUES ('Cardinal',
+        'Stavanger', 'Norway');
+      </p>
+    </div>
+    <p>The selection from the "Customers" table will now look like this:</p>
+    <img src="../img/custom2.PNG" alt="" />
+    <a href="7_Orderby.html"><button type="button" id="left">PREV</button></a>
+    <a href="9_sqlnull.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

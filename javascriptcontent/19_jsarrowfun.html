@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      display: inline-block;
+      background-color: #000000;
+      color: #fff;
+      margin-left: 0.5em;
+      font-weight: bold;
+    }
+  
+    p {
+      margin-left: 1.5em;
+      margin-right: 1em;
+      font-size: 17px;
+      line-height: 20.5px;
+      display: block;
+    }
+  
+    img {
+      margin-left: 2em;
+      display: block;
+    }
+  
+    #left,
+    #right {
+      margin-top: 5px;
+      padding: 8px 15px;
+      background-color: green;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      border: 2px solid #000;
+    }
+  
+    #left:hover,
+    #right:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  
+    #right {
+      float: right;
+    }
+  
+    footer {
+      padding: 5px;
+      margin-top: 5px;
+      color: #ffffff;
+      background-color: #e8491d;
+      text-align: center;
+    }
+    div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+  </style>
+  </head>
+
+  <body>
+    <h1>
+      Arrow Function
+    </h1>
+    <br />
+    <p>
+      Arrow functions were introduced in ES6. Arrow functions allow us to write
+      shorter function syntax:
+    </p>
+    <br />
+    <h4>
+      Before:
+    </h4>
+    <br />
+    <div>
+      <pre>
+            hello = function() {
+                return "Hello World!";
+              }
+        </pre
+      >
+    </div>
+    <br />
+    <h4>
+      With Arrow Function:
+    </h4>
+    <br />
+    <div>
+      <pre>
+            hello = () => {
+                return "Hello World!";
+              }
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      It gets shorter! If the function has only one statement, and the statement
+      returns a value, you can remove the brackets and the return keyword:
+    </p>
+    <br />
+    <h4>
+      Arrow Functions Return Value by Default:
+    </h4>
+    <br />
+    <div>
+      <pre>
+            hello = () => "Hello World!";
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      If you have parameters, you pass them inside the parentheses:
+    </p>
+    <br />
+    <h4>
+      Arrow Function With Parameters:
+    </h4>
+    <br />
+    <div>
+      <pre>
+            hello = (val) => "Hello " + val;
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      In fact, if you have only one parameter, you can skip the parentheses as
+      well:
+    </p>
+    <br />
+    <h4>
+      Arrow Function Without Parentheses:
+    </h4>
+    <br />
+    <div>
+      <pre>
+            hello = val => "Hello " + val;
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      What About this?
+    </h2>
+    <br />
+    <p>
+      The handling of this is also different in arrow functions compared to
+      regular functions. In short, with arrow functions there are no binding of
+      this. In regular functions the this keyword represented the object that
+      called the function, which could be the window, the document, a button or
+      whatever. With arrow functions the this keyword always represents the
+      object that defined the arrow function. Let us take a look at two examples
+      to understand the difference. Both examples call a method twice, first
+      when the page loads, and once again when the user clicks a button. The
+      first example uses a regular function, and the second example uses an
+      arrow function. The result shows that the first example returns two
+      different objects (window and button), and the second example returns the
+      window object twice, because the window object is the "owner" of the
+      function.
+    </p>
+    <br />
+    <h4>
+        Example
+    </h4>
+    <br />
+    <p>
+        With a regular function this represents the object that calls the function:
+    </p>
+    <br />
+    <div>
+        <pre>
+            //Regular Function:
+hello = function() {
+  document.getElementById("demo").innerHTML += this;
+}
+
+//The window object calls the function:
+window.addEventListener("load", hello);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+        </pre>
+    </div>
+    <br />
+    <h4>
+        Example
+    </h4>
+    <br />
+    <p>
+        With an arrow function this represents the owner of the function:
+    </p>
+    <br />
+    <div>
+        <pre>
+            //Arrow Function:
+hello = () => {
+  document.getElementById("demo").innerHTML += this;
+}
+
+//The window object calls the function:
+window.addEventListener("load", hello);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+        </pre>
+    </div>
+    <br />
+    <p>
+        Remember these differences when you are working with functions. Sometimes the behavior of regular functions is what you want, if not, use arrow functions.
+    </p>
+    <a href="18_jsstrictmode.html"><button type="button" id="left">PREV</button></a>
+    <a href="20_jsversions.html"><button type="button" id="right">NEXT</button></a>
+    
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

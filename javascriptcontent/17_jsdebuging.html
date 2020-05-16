@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    margin-left: 0.5em;
+    font-weight: bold;
+  }
+
+  p {
+    margin-left: 1.5em;
+    margin-right: 1em;
+    font-size: 17px;
+    line-height: 20.5px;
+    display: block;
+  }
+
+  img {
+    margin-left: 2em;
+    display: block;
+  }
+
+  #left,
+  #right {
+    margin-top: 5px;
+    padding: 8px 15px;
+    background-color: green;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #000;
+  }
+
+  #left:hover,
+  #right:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  #right {
+    float: right;
+  }
+
+  footer {
+    padding: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+  }
+  div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+</style>
+  </head>
+
+  <body>
+    <h1>
+      JavaScript Debugging
+    </h1>
+    <br />
+    <h2>
+      Code Debugging
+    </h2>
+    <br />
+    <p>
+      Programming code might contain syntax errors, or logical errors. Many of
+      these errors are difficult to diagnose. Often, when programming code
+      contains errors, nothing will happen. There are no error messages, and you
+      will get no indications where to search for errors. Searching for (and
+      fixing) errors in programming code is called code debugging.
+    </p>
+    <br />
+    <h2>
+      JavaScript Debuggers
+    </h2>
+    <br />
+    <p>
+      Debugging is not easy. But fortunately, all modern browsers have a
+      built-in JavaScript debugger. Built-in debuggers can be turned on and off,
+      forcing errors to be reported to the user. With a debugger, you can also
+      set breakpoints (places where code execution can be stopped), and examine
+      variables while the code is executing. Normally, otherwise follow the
+      steps at the bottom of this page, you activate debugging in your browser
+      with the F12 key, and select "Console" in the debugger menu.
+    </p>
+    <br />
+    <h2>
+      The console.log() Method
+    </h2>
+    <br />
+    <p>
+      If your browser supports debugging, you can use console.log() to display
+      JavaScript values in the debugger window:
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            <!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+
+<script>
+a = 5;
+b = 6;
+c = a + b;
+console.log(c);
+</script>
+
+</body>
+</html>
+        </pre>
+    </div>
+    <br />
+    <h2>
+      Setting Breakpoints
+    </h2>
+    <br />
+    <p>
+      In the debugger window, you can set breakpoints in the JavaScript code. At
+      each breakpoint, JavaScript will stop executing, and let you examine
+      JavaScript values. After examining values, you can resume the execution of
+      code (typically with a play button).
+    </p>
+    <br />
+    <h2>
+      The debugger Keyword
+    </h2>
+    <br />
+    <p>
+      The debugger keyword stops the execution of JavaScript, and calls (if
+      available) the debugging function. This has the same function as setting a
+      breakpoint in the debugger. If no debugging is available, the debugger
+      statement has no effect. With the debugger turned on, this code will stop
+      executing before it executes the third line.
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            var x = 15 * 5;
+            debugger;
+            document.getElementById("demo").innerHTML = x;
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      Major Browsers' Debugging Tools
+    </h2>
+    <br />
+    <p>
+      Normally, you activate debugging in your browser with F12, and select
+      "Console" in the debugger menu. Otherwise follow these steps:
+    </p>
+    <br />
+    <h2>
+        Chrome
+    </h2>
+    <br />
+    <p>
+        Open the browser.
+        From the menu, select "More tools".
+        From tools, choose "Developer tools".
+        Finally, select Console.
+    </p>
+    <br />
+    <h2>
+        Firefox
+    </h2>
+    <br />
+    <p>
+        Open the browser.
+        From the menu, select "Web Developer".
+        Finally, select "Web Console".
+    </p>
+    <br />
+    <h2>
+        Opera
+    </h2>
+    <br />
+    <p>
+        Open the browser.
+        From the menu, select "Developer".
+        From "Developer", select "Developer tools".
+        Finally, select "Console".
+    </p>
+    <br />
+    <h2>
+        Safari
+    </h2>
+    <br />
+    <p>
+        Go to Safari, Preferences, Advanced in the main menu.
+        Check "Enable Show Develop menu in menu bar".
+        When the new option "Develop" appears in the menu:
+        Choose "Show Error Console".
+    </p>
+    <a href="16_jsthiskey.html"><button type="button" id="left">PREV</button></a>
+    <a href="18_jsstrictmode.html"><button type="button" id="right">NEXT</button></a>
+    
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

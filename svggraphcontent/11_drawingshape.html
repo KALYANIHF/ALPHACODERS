@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+      img {
+        display: block;
+        margin-left: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Drawing shapes with canvas</h1>
+    <p>
+      Now that we have set up our canvas environment, we can get into the
+      details of how to draw on the canvas. By the end of this article, you will
+      have learned how to draw rectangles, triangles, lines, arcs and curves,
+      providing familiarity with some of the basic shapes. Working with paths is
+      essential when drawing objects onto the canvas and we will see how that
+      can be done.
+    </p>
+    <h2>The grid</h2>
+    <p>
+      Before we can start drawing, we need to talk about the canvas grid or
+      coordinate space. Our HTML skeleton from the previous page had a canvas
+      element 150 pixels wide and 150 pixels high. To the right, you see this
+      canvas with the default grid overlayed. Normally 1 unit in the grid
+      corresponds to 1 pixel on the canvas. The origin of this grid is
+      positioned in the top left corner at coordinate (0,0). All elements are
+      placed relative to this origin. So the position of the top left corner of
+      the blue square becomes x pixels from the left and y pixels from the top,
+      at coordinate (x,y). Later in this tutorial we'll see how we can translate
+      the origin to a different position, rotate the grid and even scale it, but
+      for now we'll stick to the default.
+    </p>
+    <img src="./images_svg/img10.PNG" alt="" />
+    <h2>Drawing rectangles</h2>
+    <p>
+      Unlike SVG, &lt;canvas> only supports two primitive shapes: rectangles and
+      paths (lists of points connected by lines). All other shapes must be
+      created by combining one or more paths. Luckily, we have an assortment of
+      path drawing functions which make it possible to compose very complex
+      shapes.
+    </p>
+    <p>
+      First let's look at the rectangle. There are three functions that draw
+      rectangles on the canvas:
+    </p>
+    <div>
+      fillRect(x, y, width, height)
+    </div>
+    <p>Draws a filled rectangle.</p>
+    <div>strokeRect(x, y, width, height)</div>
+    <p>Draws a rectangular outline.</p>
+    <div>clearRect(x, y, width, height)</div>
+    <p>
+      Clears the specified rectangular area, making it fully transparent. Each
+      of these three functions takes the same parameters. x and y specify the
+      position on the canvas (relative to the origin) of the top-left corner of
+      the rectangle. width and height provide the rectangle's size. Below is the
+      draw() function from the previous page, but now it is making use of these
+      three functions.
+    </p>
+    <h2>Rectangular shape example</h2>
+    <div>
+      <pre>
+        function draw() {
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        
+        ctx.fillRect(25, 25, 100, 100);
+        ctx.clearRect(45, 45, 60, 60);
+        ctx.strokeRect(50, 50, 50, 50);
+        }
+        }
+      </pre>
+    </div>
+    <h3>Output</h3>
+    <img src="./images_svg/img11.PNG" alt="" />
+    <p>
+      The fillRect() function draws a large black square 100 pixels on each
+      side. The clearRect() function then erases a 60x60 pixel square from the
+      center, and then strokeRect() is called to create a rectangular outline
+      50x50 pixels within the cleared square. In upcoming pages we'll see two
+      alternative methods for clearRect(), and we'll also see how to change the
+      color and stroke style of the rendered shapes. Unlike the path functions
+      we'll see in the next section, all three rectangle functions draw
+      immediately to the canvas.
+    </p>
+    <h2>Drawing a triangle</h2>
+    <p>
+      For example, the code for drawing a triangle would look something like
+      this:
+    </p>
+    <div>
+      <pre>
+        function draw() {
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        
+        ctx.beginPath();
+        ctx.moveTo(75, 50);
+        ctx.lineTo(100, 75);
+        ctx.lineTo(100, 25);
+        ctx.fill();
+        }
+        }
+      </pre>
+    </div>
+    <h3>result will be look like this</h3>
+    <img src="./images_svg/img12.PNG" alt="" />
+    <h2>Moving the pen</h2>
+    <p>
+      One very useful function, which doesn't actually draw anything but becomes
+      part of the path list described above, is the moveTo() function. You can
+      probably best think of this as lifting a pen or pencil from one spot on a
+      piece of paper and placing it on the next.
+    </p>
+    <p>
+      <b>moveTo(x, y)</b>
+      Moves the pen to the coordinates specified by x and y. When the canvas is
+      initialized or beginPath() is called, you typically will want to use the
+      moveTo() function to place the starting point somewhere else. We could
+      also use moveTo() to draw unconnected paths. Take a look at the smiley
+      face below.
+    </p>
+    <p>
+      To try this for yourself, you can use the code snippet below. Just paste
+      it into the draw() function we saw earlier.
+    </p>
+    <div>
+      <pre>
+        function draw() {
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        
+        ctx.beginPath();
+        ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // Outer circle
+        ctx.moveTo(110, 75);
+        ctx.arc(75, 75, 35, 0, Math.PI, false); // Mouth (clockwise)
+        ctx.moveTo(65, 65);
+        ctx.arc(60, 65, 5, 0, Math.PI * 2, true); // Left eye
+        ctx.moveTo(95, 65);
+        ctx.arc(90, 65, 5, 0, Math.PI * 2, true); // Right eye
+        ctx.stroke();
+        }
+        }
+      </pre>
+    </div>
+    <img src="./images_svg/img13.PNG" alt="">
+    <a href="10_basicuse.html"><button type="button" id="left">PREV</button></a>
+    <a href="12_usingimg.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

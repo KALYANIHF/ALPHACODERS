@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>How to run PHP code in XAMPP</h1>
+    <p>
+      Generally, a PHP file contains HTML tags and some PHP scripting code. It
+      is very easy to create a simple PHP example. To do so, create a file and
+      write HTML tags + PHP code and save this file with .php extension.
+    </p>
+    <p>
+      All PHP code goes between the php tag. It starts with &lt;?php and ends
+      with ?>. The syntax of PHP tag is given below:
+    </p>
+    <img src="./images/Capture.PNG" alt="program" />
+    <p>
+      Let's see a simple PHP example where we are writing some text using PHP
+      echo command.
+    </p>
+    <p>File: first.php</p>
+    <img src="./images/Capture1.PNG" alt="program" />
+    <h3>Output:</h3>
+    <h2>Hello First PHP</h2>
+    <h1>How to run PHP programs in XAMPP</h1>
+    <p>
+      How to run PHP programs in XAMPP PHP is a popular backend programming
+      language. PHP programs can be written on any editor, such as - Notepad,
+      Notepad++, Dreamweaver, etc. These programs save with .php extension,
+      i.e., filename.php inside the htdocs folder.
+    </p>
+    <p><b>For example</b>- p1.php.</p>
+    <p>
+      As I'm using window, and my XAMPP server is installed in D drive. So, the
+      path for the htdocs directory will be "D:\xampp\htdocs".
+    </p>
+    <p>
+      PHP program runs on a web browser such as - Chrome, Internet Explorer,
+      Firefox, etc. Below some steps are given to run the PHP programs.
+    </p>
+    <ul>
+      <li><b>Step 1:</b> Create a simple PHP program like hello world.</li>
+      <br />
+      <p>
+        <img src="./images/Capture2.PNG" alt="program" />
+      </p>
+      <li>
+        <b>Step 2:</b> Save the file with <b>hello.php</b> name in the htdocs
+        folder, which resides inside the xampp folder.
+      </li>
+      <br />
+      <li>
+        <b>Step 3:</b> Run the XAMPP server and start the Apache and MySQL.
+      </li>
+      <br />
+      <li>
+        <b>Step 4:</b> Now, open the web browser and type localhost
+        http://localhost/hello.php on your browser window.
+      </li>
+      <br />
+      <li>
+        <b>Step 5:</b> The output for the above <b>hello.php</b> program will be
+        shown as the screenshot below:
+      </li>
+      <br />
+      <div style="margin-left: 10px;">
+        <img src="./images/run-php-code-in-xampp.png" alt="PHP OUTPUT" />
+      </div>
+    </ul>
+    <p>
+      Most of the time, PHP programs run as a web server module. However, PHP
+      can also be run on CLI (Command Line Interface).
+    </p>
+    <h1>PHP Case Sensitivity</h1>
+    <p>
+      In PHP, keyword (e.g., echo, if, else, while), functions, user-defined
+      functions, classes are not case-sensitive. However, all variable names are
+      case-sensitive.
+    </p>
+    <p>
+      In the below example, you can see that all three echo statements are equal
+      and valid:
+    </p>
+    <img src="./images/Capture3.PNG" alt="program" />
+    <p><b>Output</b></p>
+    <img src="./images/Capture4.PNG" alt="program" />
+    <p>
+      Look at the below example that the variable names are case sensitive. You
+      can see the example below that only the second statement will display the
+      value of the $color variable. Because it treats $color, $ColoR, and $COLOR
+      as three different variables:
+    </p>
+    <img src="./images/Capture5.PNG" alt="program" />
+    <p><b>Output</b></p>
+    <img src="./images/Capture6.PNG" alt="program" />
+    <p>
+      Only $color variable has printed its value, and other variables $ColoR and
+      $COLOR are declared as undefined variables. An error has occurred in line
+      5 and line 7.
+    </p>
+    <div>
+      <a href="instphp.html"><button type="button" id="left">PREV</button></a>
+      <a href="phpprint.html"><button type="button" id="right">NEXT</button></a>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

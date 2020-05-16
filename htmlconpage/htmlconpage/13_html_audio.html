@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+       #left,#right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+    img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    
+      #right {
+        float: right;
+      }
+    
+
+      ul li {
+        font-size: 20px;
+      }
+      ol li,
+      dl {
+        font-size: 20px;
+      }
+
+      /* p a{
+        text-decoration-color: blue;
+      }*/
+      b {
+        font-size: 17px;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Audio Tag</h1>
+    <p>
+      <b>HTML audio tag</b> is used to define sounds such as music and other
+      audio clips. Currently there are three supported file format for HTML 5
+      audio tag.
+    </p>
+    <ol>
+      <li>mp3</li>
+      <br />
+      <li>wav</li>
+      <br />
+      <li>ogg</li>
+      <br />
+    </ol>
+    <p>
+      HTML5 supports &lt;video> and &lt;audio> controls. The Flash, Silverlight
+      and similar technologies are used to play the multimedia items.
+      <br /><br />
+
+      This table defines that which web browser supports which audio file
+      format.
+    </p>
+    <img src="./htmlaudio/htmlaudio1.PNG" alt="formats" /><br />
+    <h1>HTML Audio Tag Example</h1>
+    <p>Let's see the code to play mp3 file using HTML audio tag.</p>
+    <img src="./htmlaudio/htmlaudio2.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <audio controls>
+      <source src="./htmlaudio/koyal.mp3" type="audio/mpeg" />
+      Your browser does not support the html audio tag.
+    </audio>
+    <p>Let's see the example to play ogg file using HTML audio tag.</p>
+    <img src="./htmlaudio/htmlaudio3.PNG" alt="example" />
+    <audio controls>
+      <source src="./htmlaudio/koyal.ogg" type="audio/ogg" />
+      Your browser does not support the html audio tag.
+    </audio>
+    <h2>Supporting Browsers</h2>
+    <img src="./htmlaudio/htmlaudio4.PNG" alt="Browsers" />
+    <h1>Attributes of HTML Audio Tag</h1>
+    <p>There is given a list of HTML audio tag.</p>
+    <img src="./htmlaudio/htmlaudio5.PNG" alt="list" />
+    <h1>HTML Audio Tag Attribute Example</h1>
+    <p>
+      Here we are going to use controls, autoplay, loop and src attributes of
+      HTML audio tag
+    </p>
+    <img src="./htmlaudio/htmlaudio6.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <audio controls loop>
+      <source src="./htmlaudio/koyal.mp3" type="audio/mpeg" />
+    </audio>
+    <br />
+    <h1>MIME Types for HTML Audio format</h1>
+    <p>The available MIME type HTML audio tag is given below.</p>
+    <img src="./htmlaudio/htmlaudio7.PNG" alt="audio tags" />
+        <a href="12_html_global.html"><button type="button" id="left">PREV</button></a>
+        <a href="14_html_video.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

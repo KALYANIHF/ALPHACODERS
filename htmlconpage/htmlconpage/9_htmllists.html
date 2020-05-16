@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+        h1,
+        h2 {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        p {
+            margin-left: 1em;
+        }
+
+        ul li {
+            font-size: 20px;
+        }
+        ol li,dl {
+            font-size: 20px;
+        }
+ #left,#right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+    img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    
+      #right {
+        float: right;
+      }
+    
+        /* p a{
+        text-decoration-color: blue;
+      }*/
+        b {
+            font-size: 17px;
+        }
+         footer {
+      padding: 5px;
+      margin-top: 5px;
+      color: #ffffff;
+      background-color: #e8491d;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>HTML Lists</h1>
+    <p>HTML Lists are used to specify lists of information. All lists may contain one or more list elements. There are three different types of HTML lists:</p>
+    <ol>
+        <li>Ordered List or Numbered List (ol)</li>
+        <li>Unordered List or Bulleted List (ul)</li>
+        <li>Description List or Definition List (dl)</li>
+    </ol>
+    <img src="./htmllist/htmllist1.PNG" alt="Note">
+    <h1>HTML Ordered List or Numbered List</h1>
+    <p>In the ordered HTML lists, all the list items are marked with numbers by default. It is known as numbered list also. The ordered list starts with &lt;ol> tag and the list items start with &lt;li> tag.</p>
+    <img src="./htmllist/htmllist2.PNG" alt="list code">
+    <h3>Output:</h3>
+    <ol>
+        <li>Aries</li>
+        <li>Bingo</li>
+        <li>Leo</li>
+        <li>Oracle</li>
+    </ol>
+    <h1>HTML Unordered List or Bulleted List</h1>
+    <p>In HTML Unordered list, all the list items are marked with bullets. It is also known as bulleted list also. The Unordered list starts with &lt;ul> tag and list items start with the &lt;li> tag.</p>
+    <img src="./htmllist/htmllist3.PNG" alt="Unordered list">
+    <h3>Output:</h3>
+    <ul style="list-style-type: circle">
+        <li>Aries</li>
+        <li>Bingo</li>
+        <li>Leo</li>
+        <li>Oracle</li>
+    </ul>
+    <h1>HTML Description List or Definition List</h1>
+    <p>HTML Description list is also a list style which is supported by HTML and XHTML. It is also known as definition list where entries are listed like a dictionary or encyclopedia. <br><br>
+
+        The definition list is very appropriate when you want to present glossary, list of terms or other name-value list. <br><br>
+        
+        The HTML definition list contains following three tags:
+        <ol>
+            <li><b>&lt;dl> tag</b> defines the start of the list.</li>
+            <li><b>&lt;dt> tag</b> defines a term.</li>
+            <li><b>&lt;dd> tag</b> defines the term definition (description).</li>
+        </ol>
+    </p>
+    <img src="./htmllist/htmllist4.PNG" alt="tags">
+    <h3>Output:</h3>
+    <dl>  
+        <dt>Aries</dt>  
+        <dd>-One of the 12 horoscope sign.</dd>  
+        <dt>Bingo</dt>  
+        <dd>-One of my evening snacks</dd>  
+       <dt>Leo</dt>  
+       <dd>-It is also an one of the 12 horoscope sign.</dd>  
+        <dt>Oracle</dt>  
+        <dd>-It is a multinational technology corporation.</dd>   
+      </dl>  
+      <h1>HTML Nested List</h1>
+      <p>A list within another list is termed as nested list. If you want a bullet list inside a numbered list then such type of list will called as nested list.</p>
+      <h3>Code:</h3>
+      <img src="./htmllist/htmllist5.PNG" alt="code">
+      <img src="./htmllist/htmllist6.PNG" alt="code">
+      <h3>Output:</h3>
+      <img src="./htmllist/htmllist7.PNG" alt="Output"><br>
+      <h2>Supporting Browsers</h2>
+      <img src="./htmllist/htmllist8.PNG" alt="Browsers">
+        <a href="8_htmlcomments.html"><button type="button" id="left">PREV</button></a>
+        <a href="10_htmlphrasetag.html"><button type="button" id="right">NEXT</button></a>
+        <footer>
+            <p>
+                <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+            </p>
+        </footer>
+</body>
+</html>

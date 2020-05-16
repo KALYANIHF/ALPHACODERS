@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+
+      img {
+        margin-left: 2em;
+        display: block;
+      }
+
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      #right {
+        float: right;
+      }
+
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Tutorial</h1>
+    <p>
+      JavaScript is the programming language of HTML and the Web. JavaScript is
+      easy to learn. This tutorial will teach you JavaScript from basic to
+      advanced.
+    </p>
+    <h2>Examples in Each Chapter</h2>
+    <p>
+      With our "Try it Yourself" editor, you can edit the source code and view
+      the result.
+    </p>
+    <h4>Example</h4>
+    <div>
+      <h1>My First JavaScript</h1>
+      <button
+        type="button"
+        onclick="document.getElementById('alpha').innerHTML= Date()"
+      >
+        Click to see Date
+      </button>
+      <p id="alpha"></p>
+    </div>
+    <h2>Why Study JavaScript?</h2>
+    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+    <ol>
+      <li>HTML to define the content of web pages</li>
+      <li>CSS to specify the layout of web pages</li>
+      <li>JavaScript to program the behavior of web pages</li>
+    </ol>
+    <p>
+      Web pages are not the only place where JavaScript is used. Many desktop
+      and server programs use JavaScript. Node.js is the best known. Some
+      databases, like MongoDB and CouchDB, also use JavaScript as their
+      programming language.
+    </p>
+    <h2>Learning Speed</h2>
+    <p>
+      In this tutorial, the learning speed is your choice. Everything is up to
+      you. If you are struggling, take a break, or reread the material. Always
+      make sure you understand all the "Try-it-Yourself" examples.
+    </p>
+    <a href="welcomepage.html"><button type="button" id="left">PREV</button></a>
+    <a href="2_jsIntroduction.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

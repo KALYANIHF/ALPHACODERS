@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 20px;
+      }
+      ol li,
+      dl {
+        font-size: 20px;
+      }
+       #left,#right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+    img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    
+      #right {
+        float: right;
+      }
+    
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+
+      /* p a{
+        text-decoration-color: blue;
+      }*/
+      b {
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Video Tag</h1>
+    <p>
+      HTML 5 supports &lt;video> tag also. The HTML video tag is used for
+      streaming video files such as a movie clip, song clip on the web page.
+      <br /><br />
+
+      Currently, there are three video formats supported for HTML video tag:
+    </p>
+    <ol>
+      <li>mp4</li>
+      <br />
+      <li>webM</li>
+      <br />
+      <li>ogg</li>
+    </ol>
+    <p>
+      Let's see the table that defines which web browser supports video file
+      format.
+    </p>
+    <img src="./htmlvideo/htmlvideo1.PNG" alt="file formats" /><br />
+    <img src="./htmlvideo/htmlvideo2.PNG" alt="note" />
+    <h1>HTML Video Tag Example</h1>
+    <p>Let's see the code to play mp4 file using HTML video tag.</p>
+    <img src="./htmlvideo/htmlvideo3.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <video controls>
+      <source src="./htmlvideo/movie.mp4" type="video/mp4" />
+      Your browser does not support the html video tag.
+    </video>
+    <p>Let's see the example to play ogg file using HTML video tag.</p>
+    <img src="./htmlvideo/htmlvideo4.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <video controls>
+      <source src="./htmlvideo/movie.ogg" type="video/ogg" />
+      Your browser does not support the html video tag.
+    </video>
+    <br />
+    <h2>Supporting Browsers</h2>
+    <img src="./htmlvideo/htmlvideo5.PNG" alt="Browsers" />
+    <h1>Attributes of HTML Video Tag</h1>
+    <p>Let's see the list of HTML 5 video tag attributes.</p>
+    <img src="./htmlvideo/htmlvideo6.PNG" alt="video tags" />
+    <h1>HTML Video Tag Attribute Example</h1>
+    <p>
+      Let's see the example of video tag in HTML where are using height, width,
+      autoplay, controls and loop attributes.
+    </p>
+    <img src="./htmlvideo/htmlvideo7.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <video width="320" height="240" controls loop>
+      <source src="./htmlvideo/movie.mp4" type="video/mp4" />
+      Your browser does not support the html video tag.
+    </video>
+    <br />
+    <h1>MIME Types for HTML Video format</h1>
+    <p>The available MIME type HTML video tag is given below.</p>
+    <img src="./htmlvideo/htmlvideo8.PNG" alt="MIME types" />
+        <a href="13_html_audio.html"><button type="button" id="left">PREV</button></a>
+        <a href="15_html_table.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

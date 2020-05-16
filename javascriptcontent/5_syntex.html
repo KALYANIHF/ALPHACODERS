@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    margin-left: 0.5em;
+    font-weight: bold;
+  }
+
+  p {
+    margin-left: 1.5em;
+    margin-right: 1em;
+    font-size: 17px;
+    line-height: 20.5px;
+    display: block;
+  }
+
+  img {
+    margin-left: 2em;
+    display: block;
+  }
+
+  #left,
+  #right {
+    margin-top: 5px;
+    padding: 8px 15px;
+    background-color: green;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #000;
+  }
+
+  #left:hover,
+  #right:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  #right {
+    float: right;
+  }
+
+  footer {
+    padding: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+  }
+  div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+</style>
+  </head>
+
+  <body>
+    <h1>JavaScript Syntax</h1>
+    <div>
+      <pre>
+        var x, y, z;   // How to declare variables
+        x = 5; y = 6;  // How to assign values
+        z = x + y;     // How to compute values
+   </pre
+      >
+    </div>
+    <h2>JavaScript Values</h2>
+    <p>
+      The JavaScript syntax defines two types of values: Fixed values and
+      variable values. Fixed values are called literals. Variable values are
+      called variables.
+    </p>
+    <h2>JavaScript Literals</h2>
+    <p>
+      The most important rules for writing fixed values are: Numbers are written
+      with or without decimals:
+    </p>
+    <div>
+      <pre>
+          10.50 
+          1001
+    </pre
+      >
+    </div>
+    <h2>JavaScript Variables</h2>
+    <p>
+      In a programming language, variables are used to store data values.
+      JavaScript uses the var keyword to declare variables. An equal sign is
+      used to assign values to variables. In this example, x is defined as a
+      variable. Then, x is assigned (given) the value 6:
+    </p>
+    <div>
+      <pre>
+        var x;
+        x = 6;</pre
+      >
+    </div>
+    <h2>JavaScript Operators</h2>
+    <p>JavaScript uses arithmetic operators ( + - * / ) to compute values:</p>
+    <div>
+      <p>(5 + 6) * 10</p>
+    </div>
+    <p>
+      JavaScript uses an assignment operator ( = ) to assign values to
+      variables:
+    </p>
+    <div>
+      <pre>
+        var x, y;
+        x = 5;
+        y = 6;</pre
+      >
+    </div>
+    <h2>JavaScript Expressions</h2>
+    <p>
+      An expression is a combination of values, variables, and operators, which
+      computes to a value. The computation is called an evaluation. For example,
+      5 * 10 evaluates to 50:
+    </p>
+    <div>
+      <p>5 * 10</p>
+    </div>
+    <h2>JavaScript Keywords</h2>
+    <p>
+      JavaScript keywords are used to identify actions to be performed. The var
+      keyword tells the browser to create variables:
+    </p>
+    <h2>JavaScript Comments</h2>
+    <p>
+      Not all JavaScript statements are "executed". Code after double slashes //
+      or between /* and */ is treated as a comment. Comments are ignored, and
+      will not be executed:
+    </p>
+    <div>
+      <pre>
+            var x = 5; // I will be executed
+        
+            // var x = 6; I will NOT be executed</pre
+      >
+    </div>
+    <h2>JavaScript Identifiers</h2>
+    <p>
+      Identifiers are names. In JavaScript, identifiers are used to name
+      variables (and keywords, and functions, and labels). The rules for legal
+      names are much the same in most programming languages. In JavaScript, the
+      first character must be a letter, or an underscore (_), or a dollar sign
+      ($). Subsequent characters may be letters, digits, underscores, or dollar
+      signs.
+    </p>
+    <h2>JavaScript is Case Sensitive</h2>
+    <p>
+      All JavaScript identifiers are case sensitive. The variables lastName and
+      lastname, are two different variables:
+    </p>
+    <div>
+      <p>var lastname, lastName; lastName = "Doe"; lastname = "Peterson";</p>
+    </div>
+    <h2>JavaScript and Camel Case</h2>
+    <p>
+      Historically, programmers have used different ways of joining multiple
+      words into one variable name:
+    </p>
+    <p><b>Hyphens:</b></p>
+    <p>
+      first-name, last-name, master-card, inter-city.first-name, last-name,
+      master-card, inter-city.
+    </p>
+    <p><b>Underscore:</b></p>
+    <p>first_name, last_name, master_card, inter_city.</p>
+    <p><b>Upper Camel Case (Pascal Case):</b></p>
+    <p>FirstName, LastName, MasterCard, InterCity.</p>
+    <p><b>Lower Camel Case:</b></p>
+    <p>
+      JavaScript programmers tend to use camel case that starts with a lowercase
+      letter: firstName, lastName, masterCard, interCity.
+    </p>
+    <h2>JavaScript Character Set</h2>
+    <p>
+      JavaScript uses the Unicode character set. Unicode covers (almost) all the
+      characters, punctuations, and symbols in the world.
+    </p>
+    <a href="4_statement.html"><button type="button" id="left">PREV</button></a>
+    <a href="6_jsCommands.html"><button type="button" id="right">NEXT</button></a>
+    
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

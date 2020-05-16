@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2 {
+        display: inline-block;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      p {
+        margin-left: 1em;
+      }
+
+      ul li {
+        font-size: 20px;
+      }
+      ol li,
+      dl {
+        font-size: 20px;
+      }
+       #left,#right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+    img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    
+      #right {
+        float: right;
+      }
+    
+
+      /* p a{
+        text-decoration-color: blue;
+      }*/
+      b {
+        font-size: 17px;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Form</h1>
+    <p>
+      An <b>HTML form</b> is a section of a document which contains controls
+      such as text fields, password fields, checkboxes, radio buttons, submit
+      button, menus etc. <br /><br />
+
+      An HTML form facilitates the user to enter data that is to be sent to the
+      server for processing such as name, email address, password, phone number,
+      etc. .
+    </p>
+    <h1>Why use HTML Form</h1>
+    <p>
+      HTML forms are required if you want to collect some data from of the site
+      visitor. <br /><br />
+
+      For example: If a user want to purchase some items on internet, he/she
+      must fill the form such as shipping address and credit/debit card details
+      so that item can be sent to the given address.
+    </p>
+    <h1>HTML Form Syntax</h1>
+    <img src="./html_form/htmlform1.PNG" alt="Syntax" />
+    <h1>HTML Form Tags</h1>
+    <p>Let's see the list of HTML 5 form tags.</p>
+    <img src="./html_form/htmlform2.PNG" alt="tags" />
+    <h1>HTML 5 Form Tags</h1>
+    <p>Let's see the list of HTML 5 form tags.</p>
+    <img src="./html_form/htmlform3.PNG" alt="tags" />
+    <h1>HTML &lt;form> element</h1>
+    <p>
+      The HTML &lt;form> element provide a document section to take input from
+      user. It provides various interactive controls for submitting information
+      to web server such as text field, text area, password field, etc.
+    </p>
+    <img src="./html_form/htmlform4.PNG" alt="note" />
+    <h3>Syntax:</h3>
+    <img src="./html_form/htmlform5.PNG" alt="Syntax" />
+    <h1>HTML &lt;input> element</h1>
+    <p>
+      The HTML &lt;input> element is fundamental form element. It is used to
+      create form fields, to take input from user. We can apply different input
+      filed to gather different information form user. Following is the example
+      to show the simple text input.
+    </p>
+    <h1>Example:</h1>
+    <img src="./html_form/htmlform6.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./html_form/htmlform7.PNG" alt="Output" /><br />
+    <h1>HTML TextField Control</h1>
+    <p>
+      The type="text" attribute of input tag creates textfield control also
+      known as single line textfield control. The name attribute is optional,
+      but it is required for the server side component such as JSP, ASP, PHP
+      etc.
+    </p>
+    <img src="./html_form/htmlform8.PNG" alt="code" />
+    <h3>Output:</h3>
+    <img src="./html_form/htmlform9.PNG" alt="Output" />
+    <img src="./html_form/htmlform10.PNG" alt="note" />
+    <h1>HTML &lt;textarea> tag in form</h1>
+    <p>
+      The &lt;textarea> tag in HTML is used to insert multiple-line text in a
+      form. The size of &lt;textarea> can be specify either using "rows" or
+      "cols" attribute or by CSS.
+    </p>
+    <h3>Example:</h3>
+    <img src="./html_form/htmlform11.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./html_form/htmlform12.PNG" alt="Output" /><br />
+    <h1>Label Tag in Form</h1>
+    <p>
+      It is considered better to have label in form. As it makes the code
+      parser/browser/user friendly. <br /><br />
+
+      If you click on the label tag, it will focus on the text control. To do
+      so, you need to have for attribute in label tag that must be same as id
+      attribute of input tag.
+    </p>
+    <img src="./html_form/htmlform13.PNG" alt="note" />
+    <img src="./html_form/htmlform14.PNG" alt="example" />
+    <h3>Output:</h3>
+    <img src="./html_form/htmlform15.PNG" alt="Output" />
+    <h1>HTML Password Field Control</h1>
+    <p>The password is not visible to the user in password field control.</p>
+    <img src="./html_form/htmlform16.PNG" alt="code" />
+    <h3>Output:</h3>
+    <img src="./html_form/htmlform17.PNG" alt="Output" />
+    <h1>HTML 5 Email Field Control</h1>
+    <p>
+      The email field in new in HTML 5. It validates the text for correct email
+      address. You must use @ and . in this field.
+    </p>
+    <img src="./html_form/htmlform18.PNG" alt="Example" />
+    <p>It will display in browser like below:</p>
+    <img src="./html_form/htmlform19.PNG" alt="Output" /><br />
+    <img src="./html_form/htmlform20.PNG" alt="note" /><br />
+    <img src="./html_form/htmlform21.PNG" alt="example" /><br />
+    <h1>Radio Button Control</h1>
+    <p>
+      The radio button is used to select one option from multiple options. It is
+      used for selection of gender, quiz questions etc. <br />
+      <br />
+
+      If you use one name for all the radio buttons, only one radio button can
+      be selected at a time. <br /><br />
+
+      Using radio buttons for multiple options, you can only choose a single
+      option at a time.
+    </p>
+    <img src="./html_form/htmlform22.PNG" alt="Example" />
+    <img src="./html_form/htmlform23.PNG" alt="Output" /><br />
+    <h1>Checkbox Control</h1>
+    <p>
+      The checkbox control is used to check multiple options from given
+      checkboxes.
+    </p>
+    <img src="./html_form/htmlform24.PNG" alt="Example" />
+    <img src="./html_form/htmlform25.PNG" alt="note" />
+    <h3>Output:</h3>
+    <img src="./html_form/htmlform26.PNG" alt="Output" /><br />
+    <h1>Submit button control</h1>
+    <p>
+      HTML &lt;input type="submit"> are used to add a submit button on web page.
+      When user clicks on submit button, then form get submit to the server.
+      <br /><br />
+
+      Syntax:
+    </p>
+    <img src="./html_form/htmlform27.PNG" alt="Syntax" />
+    <p>
+      The type = submit , specifying that it is a submit button <br /><br />
+
+      The value attribute can be anything which we write on button on web page.
+      <br /><br />
+
+      The name attribute can be omit here.
+    </p>
+    <h3>Example:</h3>
+    <img src="./html_form/htmlform28.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./html_form/htmlform29.PNG" alt="Output" /><br />
+    <h1>HTML &lt;fieldset> element:</h1>
+    <p>
+      The &lt;fieldset> element in HTML is used to group the related information
+      of a form. This element is used with &lt;legend> element which provide
+      caption for the grouped elements.
+    </p>
+    <h3>Example:</h3>
+    <img src="./html_form/htmlform30.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./html_form/htmlform31.PNG" alt="Output" />
+    <h1>HTML Form Example</h1>
+    <p>Following is the example for a simple form of registration.</p>
+    <img src="./html_form/htmlform32.PNG" alt="Example" />
+    <img src="./html_form/htmlform33.PNG" alt="Example" />
+    <h3>Output:</h3>
+    <img src="./html_form/htmlform34.PNG" alt="Output" />
+    <h1>HTML Form Example</h1>
+    <p>Let's see a simple example of creating HTML form.</p>
+    <img src="./html_form/htmlform35.PNG" alt="example" />
+    <img src="./html_form/htmlform36.PNG" alt="example" />
+    <h2>Supporting Browsers</h2>
+    <img src="./html_form/htmlform37.PNG" alt="" />
+        <a href="15_html_table.html"><button type="button" id="left">PREV</button></a>
+        <a href="17_html_tags.html"><button type="button" id="right">NEXT</button></a>
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

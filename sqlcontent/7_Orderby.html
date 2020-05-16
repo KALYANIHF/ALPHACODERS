@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+ img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SQL ORDER BY Keyword</h1>
+    <p>
+      The ORDER BY keyword is used to sort the result-set in ascending or
+      descending order. The ORDER BY keyword sorts the records in ascending
+      order by default. To sort the records in descending order, use the DESC
+      keyword
+    </p>
+    <h3>ORDER BY Syntax</h3>
+    <div>
+      <p>
+        SELECT column1, column2, ... FROM table_name ORDER BY column1, column2,
+        ... ASC|DESC;
+      </p>
+    </div>
+    <h3>Demo Database</h3>
+    <img src="../img/tablesql.png" alt="" />
+    <h2>ORDER BY Example</h2>
+    <p>
+      The following SQL statement selects all customers from the "Customers"
+      table, sorted by the "Country" column:
+    </p>
+    <h3>Example</h3>
+    <div><p>SELECT * FROM Customers ORDER BY Country;</p></div>
+    <h3>ORDER BY DESC Example</h3>
+    <div>
+      <p>SELECT * FROM Customers ORDER BY Country DESC;</p>
+    </div>
+    <h3>ORDER BY Several Columns Example</h3>
+    <p>
+      The following SQL statement selects all customers from the "Customers"
+      table, sorted by the "Country" and the "CustomerName" column. This means
+      that it orders by Country, but if some rows have the same Country, it
+      orders them by CustomerName:
+    </p>
+    <div>
+      <p>SELECT * FROM Customers ORDER BY Country, CustomerName;</p>
+      <p>SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;</p>
+    </div>
+    <a href="6_sqlandn.html"><button type="button" id="left">PREV</button></a>
+    <a href="8_insert.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

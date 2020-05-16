@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+       img {
+        margin-left: 2em;
+        display: block;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SQL Joins</h1>
+    <p>
+      A JOIN clause is used to combine rows from two or more tables, based on a
+      related column between them.
+    </p>
+    <p>Let's look at a selection from the "Orders" table:</p>
+    <img src="../img/orderlist.PNG" alt="" />
+    <p>Then, look at a selection from the "Customers" table:</p>
+    <img src="../img/customertable.PNG" alt="" />
+    <p>
+      Notice that the "CustomerID" column in the "Orders" table refers to the
+      "CustomerID" in the "Customers" table. The relationship between the two
+      tables above is the "CustomerID" column. Then, we can create the following
+      SQL statement (that contains an INNER JOIN), that selects records that
+      have matching values in both tables:
+    </p>
+    <h4>Example</h4>
+    <div>
+      <p>
+        SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate FROM
+        Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+      </p>
+    </div>
+    <p>and it will produce something like this:</p>
+    <img src="../img/finaltable.PNG" alt="" />
+    <h2>Different Types of SQL JOINs</h2>
+    <p>Here are the different types of the JOINs in SQL:</p>
+    <ul>
+      <li>
+        <b>(INNER) JOIN:</b> Returns records that have matching values in both
+        tables
+      </li>
+      <li>
+        <b>LEFT (OUTER) JOIN:</b> Returns all records from the left table, and
+        the matched records from the right table
+      </li>
+      <li>
+        <b>RIGHT (OUTER) JOIN:</b> Returns all records from the right table, and
+        the matched records from the left table
+      </li>
+      <li>
+        <b>FULL (OUTER) JOIN:</b> Returns all records when there is a match in
+        either left or right table <b></b>
+      </li>
+    </ul>
+    <img src="../img/typeofjoin.PNG" alt="" />
+    <a href="12_sqlbetween.html"><button type="button" id="left">PREV</button></a>
+    <a href="14_sqlunion.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

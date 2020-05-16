@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      display: inline-block;
+      background-color: #000000;
+      color: #fff;
+      margin-left: 0.5em;
+      font-weight: bold;
+    }
+  
+    p {
+      margin-left: 1.5em;
+      margin-right: 1em;
+      font-size: 17px;
+      line-height: 20.5px;
+      display: block;
+    }
+  
+    img {
+      margin-left: 2em;
+      display: block;
+    }
+  
+    #left,
+    #right {
+      margin-top: 5px;
+      padding: 8px 15px;
+      background-color: green;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      border: 2px solid #000;
+    }
+  
+    #left:hover,
+    #right:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  
+    #right {
+      float: right;
+    }
+  
+    footer {
+      padding: 5px;
+      margin-top: 5px;
+      color: #ffffff;
+      background-color: #e8491d;
+      text-align: center;
+    }
+    div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+  </style>
+  </head>
+
+  <body>
+    <h1>
+      JavaScript Use Strict
+    </h1>
+    <br />
+    <p>
+      "use strict"; Defines that JavaScript code should be executed in "strict
+      mode".
+    </p>
+    <br />
+    <h2>
+      The "use strict" Directive
+    </h2>
+    <br />
+    <p>
+      The "use strict" directive was new in ECMAScript version 5. It is not a
+      statement, but a literal expression, ignored by earlier versions of
+      JavaScript. The purpose of "use strict" is to indicate that the code
+      should be executed in "strict mode". With strict mode, you can not, for
+      example, use undeclared variables. All modern browsers support "use
+      strict" except Internet Explorer 9 and lower:
+    </p>
+    <br />
+    <img src="../img/strctjs1.PNG" alt="" />
+    <br />
+    <p>
+      The numbers in the table specify the first browser version that fully
+      supports the directive.
+    </p>
+    <br />
+    <h2>
+      Declaring Strict Mode
+    </h2>
+    <br />
+    <p>
+      Strict mode is declared by adding "use strict"; to the beginning of a
+      script or a function. Declared at the beginning of a script, it has global
+      scope (all code in the script will execute in strict mode):
+    </p>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            "use strict";
+x = 3.14;       // This will cause an error because x is not declared
+        </pre
+      >
+    </div>
+    <br />
+    <h4>
+      Example
+    </h4>
+    <br />
+    <div>
+      <pre>
+            "use strict";
+myFunction();
+
+function myFunction() {
+  y = 3.14;   // This will also cause an error because y is not declared
+}
+        </pre
+      >
+    </div>
+    <br />
+    <p>
+      Declared inside a function, it has local scope (only the code inside the
+      function is in strict mode):
+    </p>
+    <br />
+    <div>
+      <pre>
+            x = 3.14;       // This will not cause an error.
+myFunction();
+
+function myFunction() {
+  "use strict";
+  y = 3.14;   // This will cause an error
+}
+        </pre
+      >
+    </div>
+    <br />
+    <h2>
+      The "use strict"; Syntax
+    </h2>
+    <br />
+    <p>
+      The syntax, for declaring strict mode, was designed to be compatible with
+      older versions of JavaScript. Compiling a numeric literal (4 + 5;) or a
+      string literal ("John Doe";) in a JavaScript program has no side effects.
+      It simply compiles to a non existing variable and dies. So "use strict";
+      only matters to new compilers that "understand" the meaning of it.
+    </p>
+    <br />
+    <h2>
+      Why Strict Mode?
+    </h2>
+    <br />
+    <p>
+      Strict mode makes it easier to write "secure" JavaScript. Strict mode
+      changes previously accepted "bad syntax" into real errors. As an example,
+      in normal JavaScript, mistyping a variable name creates a new global
+      variable. In strict mode, this will throw an error, making it impossible
+      to accidentally create a global variable. In normal JavaScript, a
+      developer will not receive any error feedback assigning values to
+      non-writable properties. In strict mode, any assignment to a non-writable
+      property, a getter-only property, a non-existing property, a non-existing
+      variable, or a non-existing object, will throw an error.
+    </p>
+    <br />
+    <h2>
+        Not Allowed in Strict Mode
+    </h2>
+    <br />
+    <p>
+        Using a variable, without declaring it, is not allowed:
+    </p>
+    <br />
+    <div>
+        <pre>
+            "use strict";
+x = 3.14;                // This will cause an error
+        </pre>
+    </div>
+    <br />
+    <p>
+        Using an object, without declaring it, is not allowed:
+    </p>
+    <br />
+    <div>
+        <pre>
+            "use strict";
+x = {p1:10, p2:20};      // This will cause an error
+        </pre>
+    </div>
+    <br />
+    <p>
+        Deleting a variable (or object) is not allowed.
+    </p>
+    <br />
+    <div>
+        <pre>
+            "use strict";
+var x = 3.14;
+delete x;                // This will cause an error
+        </pre>
+    </div>
+    <br />
+    <p>
+        Deleting a function is not allowed.
+    </p>
+    <br />
+    <div>
+        <pre>
+            "use strict";
+function x(p1, p2) {};
+delete x;                // This will cause an error
+        </pre>
+    </div>
+    <br />
+    <p>
+        Duplicating a parameter name is not allowed:
+    </p>
+    <br />
+    <div>
+        <pre>
+            "use strict";
+function x(p1, p1) {};   // This will cause an error
+        </pre>
+    </div>
+    <br />
+    <p>
+        Octal numeric literals are not allowed:
+    </p>
+    <br />
+    <div>
+        <pre>
+            "use strict";
+var x = 010;             // This will cause an error
+        </pre>
+    </div>
+    <br />
+    <p>
+        Octal escape characters are not allowed:
+    </p>
+    <br />
+    <div>
+        <pre>
+            "use strict";
+var x = "\010";            // This will cause an error
+        </pre>
+    </div>
+    <br />
+    <h2>
+        Future Proof!
+    </h2>
+    <br />
+    <p>
+        Keywords reserved for future JavaScript versions can NOT be used as variable names in strict mode.
+
+These are:
+
+implements
+interface
+let
+package
+private
+protected
+public
+static
+yield
+    </p>
+    <br />
+    <div>
+        <pre>
+            "use strict";
+var public = 1500;      // This will cause an error
+        </pre>
+    </div>
+    <a href="17_jsdebuging.html"><button type="button" id="left">PREV</button></a>
+    <a href="19_jsarrowfun.html"><button type="button" id="right">NEXT</button></a>
+    
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>

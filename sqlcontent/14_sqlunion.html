@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alphacoders</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        display: inline-block;
+        background-color: #000000;
+        color: #fff;
+        margin-left: 0.5em;
+        font-weight: bold;
+      }
+
+      p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+        font-size: 17px;
+        line-height: 20.5px;
+        display: block;
+      }
+      div {
+        margin-left: 3em;
+        border: 2px solid #000;
+        width: 70%;
+      }
+      img {
+        margin-left: 2em;
+        display: block;
+      }
+      #left,
+      #right {
+        margin-top: 5px;
+        padding: 8px 15px;
+        background-color: green;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #000;
+      }
+      #left:hover,
+      #right:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      #right {
+        float: right;
+      }
+      footer {
+        padding: 5px;
+        margin-top: 5px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SQL UNION Operator</h1>
+    <p>
+      The UNION operator is used to combine the result-set of two or more SELECT
+      statements.
+    </p>
+    <ul>
+      <li>
+        Each SELECT statement within UNION must have the same number of columns
+      </li>
+      <li>
+        The columns must also have similar data types The columns in each SELECT
+      </li>
+      <li>statement must also be in the same order</li>
+    </ul>
+    <h3>UNION Syntax</h3>
+    <div>
+      <p>
+        SELECT column_name(s) FROM table1 UNION SELECT column_name(s) FROM
+        table2;
+      </p>
+    </div>
+    <h3>UNION ALL Syntax</h3>
+    <p>
+      The UNION operator selects only distinct values by default. To allow
+      duplicate values, use UNION ALL:
+    </p>
+    <div>
+      <p>
+        SELECT column_name(s) FROM table1 UNION ALL SELECT column_name(s) FROM
+        table2;
+      </p>
+    </div>
+    <h2>Demo database 1:</h2>
+    <img src="../img/tablesql.png" alt="" />
+    <h2>Demo database 2:</h2>
+    <img src="../img/orderlist.PNG" alt="" />
+    <h3>SQL UNION Example</h3>
+    <p>
+      The following SQL statement returns the cities (only distinct values) from
+      both the "Customers" and the "Suppliers" table
+    </p>
+    <div>
+      <p>
+        SELECT City FROM Customers UNION SELECT City FROM Suppliers ORDER BY
+        City;
+      </p>
+    </div>
+    <p>
+      <b>Note:</b> If some customers or suppliers have the same city, each city
+      will only be listed once, because UNION selects only distinct values. Use
+      UNION ALL to also select duplicate values!
+    </p>
+    <h2>SQL UNION ALL Example</h2>
+    <p>
+      The following SQL statement returns the cities (duplicate values also)
+      from both the "Customers" and the "Suppliers" table:
+    </p>
+    <div>
+      <p>
+        SELECT City FROM Customers UNION ALL SELECT City FROM Suppliers ORDER BY
+        City;
+      </p>
+    </div>
+    <h2>SQL UNION With WHERE</h2>
+    <p>
+      The following SQL statement returns the German cities (only distinct
+      values) from both the "Customers" and the "Suppliers" table:
+    </p>
+    <div>
+      <p>
+        SELECT City, Country FROM Customers WHERE Country='Germany' UNION SELECT
+        City, Country FROM Suppliers WHERE Country='Germany' ORDER BY City;
+      </p>
+    </div>
+    <h2>SQL UNION ALL With WHERE</h2>
+    <p>
+      The following SQL statement returns the German cities (duplicate values
+      also) from both the "Customers" and the "Suppliers" table:
+    </p>
+    <div>
+      <p>
+        SELECT City, Country FROM Customers WHERE Country='Germany' UNION ALL
+        SELECT City, Country FROM Suppliers WHERE Country='Germany' ORDER BY
+        City;
+      </p>
+    </div>
+    <h2>Another UNION Example</h2>
+    <p>The following SQL statement lists all customers and suppliers:</p>
+    <div>
+      <p>The following SQL statement lists all customers and suppliers:</p>
+    </div>
+    <a href="13_sqljoin.html"><button type="button" id="left">PREV</button></a>
+    <a href="15_sqlhaving.html"><button type="button" id="right">NEXT</button></a>
+
+    <footer>
+      <p>
+        <span style="color: #000">Alpha</span> Coders , Copyright &copy; 2019
+      </p>
+    </footer>
+  </body>
+</html>
